@@ -1,0 +1,148 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #222222;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease;
+    color: #fff;
+  }
+  
+  header.scrolled {
+    background-color: #ffffff;
+    color: #000;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  
+  header.scrolled nav ul li a {
+    color: #000;
+  }
+  
+  header nav ul li a:hover {
+    color: #a5b65d;
+  }
+  
+  header nav ul li a.logo {
+    font-weight: bold;
+  }
+  
+  header nav ul li a.logo:hover {
+    color: #a5b65d;
+  }
+
+.head p {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    
+   
+}
+
+.info {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.info li {
+    background-color: #333333;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+    font-family: "Lato", sans-serif;
+    color:#888888;
+    border-radius: 10px; 
+    line-height: 1.6;
+    
+}
+
+
+.date {
+    font-size: 13px;
+    color: #fff;
+}
+.date-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 15px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+
+
+h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+h3 {
+    color: #a5b65d;
+    
+}   
+h3, h4 {
+    margin: 0;
+}
+
+p {
+    margin-top: 5px;
+}
+
+
+
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+
+}
