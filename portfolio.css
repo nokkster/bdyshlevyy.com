@@ -169,10 +169,12 @@ a {
     max-width: 50%;
 }
 
-  .popup .content a {
-    color: #a5b65d;
-    text-align: center;
+.popup .content a {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
+
   
   .popup .close-btn {
     cursor: pointer;
