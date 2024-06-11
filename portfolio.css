@@ -161,7 +161,7 @@ a {
     background: #222222;
     color: #888888;
     z-index: 2;
-    text-align: center;
+    text-align: justify;
     padding: 20px;
     box-sizing: border-box;
     transition: all 300ms ease-in-out;
