@@ -47,6 +47,27 @@ document.addEventListener("DOMContentLoaded", function () {
       togglePopup("popup-7");
   });
 
+  const showPopupBtn8 = document.getElementById("show-popup-btn-8");
+showPopupBtn8.addEventListener("click", function() {
+    togglePopup("popup-8");
+});
+
+const showPopupBtn9 = document.getElementById("show-popup-btn-9");
+showPopupBtn9.addEventListener("click", function() {
+    togglePopup("popup-9");
+});
+
+  
+
+
+
+
+
+
+
+
+  
+
   const closeBtns = document.querySelectorAll(".popup .close-btn");
   closeBtns.forEach(function(btn) {
       btn.addEventListener("click", function (event) {
@@ -56,3 +77,5 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+
