@@ -6,11 +6,28 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
-  function togglePopup(popupId) {
-      const popup = document.getElementById(popupId);
-      popup.classList.toggle("active");
-  }
+    function togglePopup(popupId) {
+        const popup = document.getElementById(popupId);
+        const video = popup.querySelector("video"); // Get the video element inside the popup
+        const iframe = popup.querySelector("iframe"); // Get the iframe element inside the popup
+    
+        popup.classList.toggle("active");
+    
+        // Pause the video when the popup is closed
+        if (!popup.classList.contains("active") && video) {
+          video.pause();
+        }
+    
+        // Pause the iframe video when the popup is closed
+        if (!popup.classList.contains("active") && iframe) {
+          const iframeSrc = iframe.src;
+          iframe.src = iframeSrc; // Reloads the iframe, stopping the video
+        }
+      }
 
   const showPopupBtn1 = document.getElementById("show-popup-btn-1");
   showPopupBtn1.addEventListener("click", function() {
