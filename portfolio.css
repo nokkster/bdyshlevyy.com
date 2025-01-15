@@ -110,6 +110,7 @@ header nav ul li a.logo:hover {
     flex-direction: column;
     align-items: center;
   }
+  
 
 
 
@@ -211,7 +212,9 @@ a {
 #show-popup-btn-6,
 #show-popup-btn-7,
 #show-popup-btn-8,
-#show-popup-btn-9 {
+#show-popup-btn-9,
+#show-popup-btn-10,
+#show-popup-btn-11 {
     background-color: #a5b65d;
     color: white;
     padding: 10px 20px;
@@ -235,7 +238,9 @@ a {
 #show-popup-btn-6:hover,
 #show-popup-btn-7:hover,
 #show-popup-btn-8:hover,
-#show-popup-btn-9:hover {
+#show-popup-btn-9:hover,
+#show-popup-btn-10:hover,
+#show-popup-btn-11:hover {
     background-color: #888888;
 }
 
