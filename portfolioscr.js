@@ -74,6 +74,16 @@ showPopupBtn9.addEventListener("click", function() {
     togglePopup("popup-9");
 });
 
+const showPopupBtn10 = document.getElementById("show-popup-btn-10");
+showPopupBtn10.addEventListener("click", function() {
+    togglePopup("popup-10");
+});
+
+const showPopupBtn11 = document.getElementById("show-popup-btn-11");
+showPopupBtn11.addEventListener("click", function() {
+    togglePopup("popup-11");
+});
+
   
 
 
