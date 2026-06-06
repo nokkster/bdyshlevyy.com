@@ -213,3 +213,22 @@ footer {
         padding: 0;
     }
 }
+
+.cv-container {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.cv-btn {
+    background-color: #a5b65d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.cv-btn:hover {
+    background-color: #888888;
+}
