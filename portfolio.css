@@ -204,23 +204,11 @@ a {
     transform: translate(-50%, -50%) scale(1);
 }
 
-#show-popup-btn-1,
-#show-popup-btn-2,
-#show-popup-btn-3,
-#show-popup-btn-4,
-#show-popup-btn-5,
-#show-popup-btn-6,
-#show-popup-btn-7,
-#show-popup-btn-8,
-#show-popup-btn-9,
-#show-popup-btn-10,
-#show-popup-btn-11 {
+.info-item button {
     background-color: #a5b65d;
     color: white;
     padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin-top: 10px;
     cursor: pointer;
@@ -230,17 +218,7 @@ a {
     transition: background-color 0.3s ease;
 }
 
-#show-popup-btn-1:hover,
-#show-popup-btn-2:hover,
-#show-popup-btn-3:hover,
-#show-popup-btn-4:hover,
-#show-popup-btn-5:hover,
-#show-popup-btn-6:hover,
-#show-popup-btn-7:hover,
-#show-popup-btn-8:hover,
-#show-popup-btn-9:hover,
-#show-popup-btn-10:hover,
-#show-popup-btn-11:hover {
+.info-item button:hover {
     background-color: #888888;
 }
 

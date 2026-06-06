@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <title>Mon Portfolio</title>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css" />
     <script src="portfolioscr.js"></script>
-   
+
 </head>
+
 <body>
 
 
@@ -29,275 +31,649 @@
 
         <p>Mon <strong>Portfolio</strong></p>
     </div>
-        <h2> Bienvenue sur mon Portfolio</h2>
-        <h2>Vous y trouverez mes compétences et mes projets que j'ai réalisés lors de ma formation à l'IUT en Réseaux et Télécommunications</h2>
-        <h4>Réseau</h4>
+    <h2> Bienvenue sur mon Portfolio</h2>
+    <h2>Vous y trouverez mes compétences et mes projets que j'ai réalisés lors de ma formation à l'IUT en Réseaux et
+        Télécommunications</h2>
 
 
-        <section id="Container"></section>
-        <div class="container">
+    <section id="Container"></section>
+    <div class="container">
 
-            <ul class="info">
-               <li class="info-item"> 
-                    <img src="vm.jpg" alt="Vm" >
-                    <h3>Utilisation de VirtualBox et Wireshark</h3>
-                    <div class="popup" id="popup-1">
-                        <div class="overlay"></div>
-                        <div class="content">
-                          <div class="close-btn">&times;</div>
-                          <h4>Utilisation de VirtualBox et Wireshark</h4>
-                          <p>Lors de ma formation à l'IUT de Sophia Antipolis,  nous avons utilisé les applications VirtualBox et Wireshark pour approfondir nos connaissances en reseau lors des TDs, des TPs et des projets.</p>
-                          <p>Je sais comment utiliser des machines virtuelles et comment analyser la capture Wireshark. J’ai découvert le fonctionnement de différentes couches protocolaires.</p>
-                        </div>
-                      </div>
-                      <button id="show-popup-btn-1" >Voir Plus</button>
-               </li>
-    
-               <li class="info-item">
-                    <img src="reseau.jpeg" alt="Reseau" >
-                    <h3>Étude de mon réseau domestique</h3>
-                    <div class="popup" id="popup-2">
-                        <div class="overlay"></div>
-                        <div class="content">
-                          <div class="close-btn">&times;</div>
-                          <h4>Étude de mon réseau domestique</h4>
-                    <p>J'ai réalisé un projet dans le cadre duquel j'ai étudié mon réseau domestique et son impact énergétique. J'ai également appris les commandes Windows et les outils Internet pour trouver les adresses IP et MAC des machines locales et distantes.</p>
-                    <p>Voici les travaux que j'ai réalisés pour la SAÉ 12, qui consistaient à nous initier aux réseaux informatiques     :</p>
-                    <a href="SAE12_Sujet.pdf" target="_blank">Sujet de la SAÉ 12</a>
-                    <br>
-                    <a href="Compte_rendu_1_ SAÉ_12.pdf" target="_blank">Partie 1 du Compte-Rendu pour la SAÉ 12</a>
-                    <br>
-                    <a href="Comptre_Rendu_2_ SAÉ_12.pdf" target="_blank">Partie 2 du Compte-Rendu pour la SAÉ 12</a>
-                        </div>
-                      </div>
-                      <button id="show-popup-btn-2">Voir Plus</button>
-               </li>
 
-               <li class="info-item">
-                <img src="cisco.jpg" alt="Cisco" >
-                <h3>Création d'un réseau virtuel</h3> 
+        <h4>Expérience</h4>
+        <ul class="info">
+            <li class="info-item">
+                <img src="inria.png" alt="Stage Inria">
+                <h3>Stage Ingénieur DevOps - Inria</h3>
+                <div class="popup" id="popup-16">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Stage Ingénieur DevOps - Inria</h4>
+                        <p>Lors de mon stage au Centre Inria d’Université Côte d’Azur, dans l’équipe-projet DIANA, j’ai
+                            travaillé sur l’automatisation de configurations réseau pour l’infrastructure expérimentale
+                            SLICES-RI.</p>
+                        <p>Mes missions principales étaient d’automatiser des tests de bande passante sur FABRIC, puis
+                            de créer un outil capable de générer et déployer automatiquement des configurations VLAN.
+                        </p>
+                        <p>J’ai utilisé Python, NetworkX, GitLab CI/CD, Ansible, FastAPI et Docker. L’objectif était de
+                            réduire les configurations manuelles, limiter les erreurs et faciliter l’isolation du trafic
+                            entre différentes expériences réseau.</p>
+                        <p>Le projet permettait de lire des topologies réseau depuis des fichiers .dot, de générer les
+                            configurations adaptées, puis de les déployer automatiquement vers des équipements réseau.
+                        </p>
+                        <a href="Stage Presentation DYSHLEVYY.pdf" target="_blank">Diaporama de présentation du
+                            stage</a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-16">Voir Plus</button>
+            </li>
+
+            <li class="info-item">
+                <img src="inria.png" alt="Alternance Inria">
+                <h3>Alternance Ingénieur DevOps - Inria</h3>
+                <div class="popup" id="popup-17">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Alternance Ingénieur DevOps - Inria</h4>
+                        <p>Dans le cadre de mon alternance au Centre Inria d’Université Côte d’Azur, je poursuis mon
+                            travail autour de l’automatisation, du déploiement d’infrastructures et de l’administration
+                            de plateformes expérimentales.</p>
+                        <p>J’ai notamment travaillé sur la mise en place d’environnements techniques avec Kubernetes,
+                            JupyterHub, Keycloak, Docker et des outils DevOps permettant de faciliter le déploiement,
+                            l’authentification et la persistance des données.</p>
+                        <p>Mon travail consiste aussi à rendre les services plus simples à déployer, plus fiables et
+                            mieux adaptés aux besoins des utilisateurs, notamment dans un contexte de recherche et
+                            d’expérimentation.</p>
+                        <p>Cette expérience me permet de renforcer mes compétences en systèmes, réseaux, DevOps,
+                            conteneurisation, automatisation et infrastructure cloud.</p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-17">Voir Plus</button>
+            </li>
+        </ul>
+
+        <h4>Réseau et Cybersécurité</h4>
+        <ul class="info">
+            <li class="info-item">
+                <img src="vm.jpg" alt="Vm">
+                <h3>Utilisation de VirtualBox et Wireshark</h3>
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Utilisation de VirtualBox et Wireshark</h4>
+                        <p>Lors de ma formation à l'IUT de Sophia Antipolis, nous avons utilisé les applications
+                            VirtualBox et Wireshark pour approfondir nos connaissances en reseau lors des TDs, des TPs
+                            et des projets.</p>
+                        <p>Je sais comment utiliser des machines virtuelles et comment analyser la capture Wireshark.
+                            J’ai découvert le fonctionnement de différentes couches protocolaires.</p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-1">Voir Plus</button>
+            </li>
+
+            <li class="info-item">
+                <img src="reseau.jpeg" alt="Reseau">
+                <h3>Étude de mon réseau domestique</h3>
+                <div class="popup" id="popup-2">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Étude de mon réseau domestique</h4>
+                        <p>J'ai réalisé un projet dans le cadre duquel j'ai étudié mon réseau domestique et son impact
+                            énergétique. J'ai également appris les commandes Windows et les outils Internet pour trouver
+                            les adresses IP et MAC des machines locales et distantes.</p>
+                        <p>Voici les travaux que j'ai réalisés pour la SAÉ 12, qui consistaient à nous initier aux
+                            réseaux informatiques :</p>
+                        <a href="SAE12_Sujet.pdf" target="_blank">Sujet de la SAÉ 12</a>
+                        <br>
+                        <a href="Compte_rendu_1_ SAÉ_12.pdf" target="_blank">Partie 1 du Compte-Rendu pour la SAÉ 12</a>
+                        <br>
+                        <a href="Comptre_Rendu_2_ SAÉ_12.pdf" target="_blank">Partie 2 du Compte-Rendu pour la SAÉ
+                            12</a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-2">Voir Plus</button>
+            </li>
+
+            <li class="info-item">
+                <img src="cisco.jpg" alt="Cisco">
+                <h3>Création d'un réseau virtuel</h3>
                 <div class="popup" id="popup-3">
                     <div class="overlay"></div>
                     <div class="content">
-                      <div class="close-btn">&times;</div>
-                      <h4>Création d'un réseau virtuel</h4>
-                      <p>En tant qu'étudiant en Réseaux et Télécommunications, j'ai été sollicité avec mon binôme pour concevoir et mettre en place le réseau informatique d'une petite entreprise. En utilisant Cisco Packet Tracer, nous avons répondu aux besoins de commutation, de routage, de services réseaux de base et de sécurité, fournissant ainsi un réseau fonctionnel et structuré.</p>
-                      <p>Voici les travaux que j'ai réalisés pour la SAÉ 21, qui consistaient à concevoir et mettre en place un réseau informatique pour une petite entreprise :</p>
-                      <a href="SAE21.pdf" target="_blank">Sujet de la SAÉ 21</a>
-                    <br>
-                    <a href="SAE21_DYSHLEVYY_TIBERDANI.pdf" target="_blank">Compte-Rendu pour la SAÉ 21</a>
-                    <br>
-                    <a href="SAE21_DYSHLEVYY_TIBERDANI.pkt" target="_blank">Fichier Packet Tracer de notre projet</a>
+                        <div class="close-btn">&times;</div>
+                        <h4>Création d'un réseau virtuel</h4>
+                        <p>En tant qu'étudiant en Réseaux et Télécommunications, j'ai été sollicité avec mon binôme pour
+                            concevoir et mettre en place le réseau informatique d'une petite entreprise. En utilisant
+                            Cisco Packet Tracer, nous avons répondu aux besoins de commutation, de routage, de services
+                            réseaux de base et de sécurité, fournissant ainsi un réseau fonctionnel et structuré.</p>
+                        <p>Voici les travaux que j'ai réalisés pour la SAÉ 21, qui consistaient à concevoir et mettre en
+                            place un réseau informatique pour une petite entreprise :</p>
+                        <a href="SAE21.pdf" target="_blank">Sujet de la SAÉ 21</a>
+                        <br>
+                        <a href="SAE21_DYSHLEVYY_TIBERDANI.pdf" target="_blank">Compte-Rendu pour la SAÉ 21</a>
+                        <br>
+                        <a href="SAE21_DYSHLEVYY_TIBERDANI.pkt" target="_blank">Fichier Packet Tracer de notre
+                            projet</a>
                     </div>
-                  </div>
-                  <button id="show-popup-btn-3">Voir Plus</button>
+                </div>
+                <button id="show-popup-btn-3">Voir Plus</button>
             </li>
 
-            
-              
-            </ul>
 
 
-            <ul class="info">
-                <li class="info-item">
-                    <img src="ccna.jpg" alt="CCNA">
-                    <h3>Certification Cisco CCNA</h3>
-                    <div class="popup" id="popup-4">
-                        <div class="overlay"></div>
-                        <div class="content">
-                            <div class="close-btn">&times;</div>
-                            <h4>Certification Cisco CCNA</h4>
-                            <p>J'ai obtenu la certification <strong>CCNA1 (CCNAv7: Introduction aux réseaux)</strong>, ce qui m'a permis de développer des compétences en matière de configuration des commutateurs et des périphériques finaux pour la connectivité réseau. Cette formation a couvert la configuration des routeurs, la création de systèmes d'adressage IPv4 et IPv6, ainsi que l'application des meilleures pratiques de sécurité pour un petit réseau.</p>
-                            <p>Actuellement, j'ai également complété la certification <strong>CCNA2 (CCNAv7: Notions de base sur la commutation, le routage et le sans fil)</strong>. Ce cours approfondit mes connaissances sur la configuration des VLANs, du routage inter-VLAN, la redondance réseau avec STP et EtherChannel, ainsi que la configuration des WLAN et la gestion de la sécurité des commutateurs et des réseaux sans fil.</p>
-                        </div>
+        </ul>
+
+
+        <ul class="info">
+            <li class="info-item">
+                <img src="ccna.jpg" alt="Certifications Cisco">
+                <h3>Certifications Cisco CCNA 1, 2 et 3</h3>
+                <div class="popup" id="popup-12">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Certifications Cisco CCNA 1, 2 et 3</h4>
+                        <p>J’ai validé les certifications Cisco CCNA 1, CCNA 2 et CCNA 3 dans le cadre de ma formation
+                            en Réseaux et Télécommunications.</p>
+                        <p>Ces certifications m’ont permis de renforcer mes compétences en adressage IPv4/IPv6,
+                            commutation, routage, VLANs, routage inter-VLAN, redondance réseau, sécurité des
+                            équipements, protocoles de routage et dépannage réseau.</p>
+                        <p>Elles représentent une base solide pour comprendre, configurer et analyser des
+                            infrastructures réseau professionnelles.</p>
                     </div>
-                    <button id="show-popup-btn-4">Voir Plus</button>
-                </li>
-                
+                </div>
+                <button id="show-popup-btn-12">Voir Plus</button>
+            </li>
 
 
-                <li class="info-item">
-                    <img src="pentesting.png" alt="Pentesting">
-                    <h3>Techniques de Pentesting</h3> 
-                    <div class="popup" id="popup-9">
-                        <div class="overlay"></div>
-                        <div class="content">
-                            <div class="close-btn">&times;</div>
-                            <h4>Techniques de Pentesting</h4>
-                            <p>Dans le cadre d'un TP de Pentesting, j'ai analysé et exploité des failles de sécurité dans un environnement simulé.</p>
-                            <p>Voici un aperçu des vulnérabilités découvertes :</p>
-                            <ul>
-                                <p>• <strong>Logiciel non à jour :</strong> Une version obsolète du service Samba permettait un accès non autorisé via une faille connue.</p>
-                                <p>• <strong>Absence de surveillance :</strong> Les connexions sortantes n'étaient pas contrôlées, facilitant la prise de contrôle à distance.</p>
-                                <p>• <strong>Mauvaises configurations :</strong> Des tâches planifiées mal sécurisées ont permis de maintenir un accès persistant.</p>
-                                <p>• <strong>Manque de segmentation :</strong> L'accès à d'autres machines du réseau était possible depuis une machine compromise.</p>
-                            </ul>
-                            <p>Ce projet m'a permis d'appliquer des techniques d'analyse des systèmes pour mieux comprendre les risques et proposer des recommandations de sécurité adaptées.</p>
-                            <a href="ANNEXE_DYSHLEVYY_PENTEST.pdf " target="_blank">Annexe de Pentest</a>
-                        </div>
+
+            <li class="info-item">
+                <img src="pentesting.png" alt="Pentesting">
+                <h3>Techniques de Pentesting</h3>
+                <div class="popup" id="popup-9">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Techniques de Pentesting</h4>
+                        <p>Dans le cadre d'un TP de Pentesting, j'ai analysé et exploité des failles de sécurité dans un
+                            environnement simulé.</p>
+                        <p>Voici un aperçu des vulnérabilités découvertes :</p>
+                        <ul>
+                            <p>• <strong>Logiciel non à jour :</strong> Une version obsolète du service Samba permettait
+                                un accès non autorisé via une faille connue.</p>
+                            <p>• <strong>Absence de surveillance :</strong> Les connexions sortantes n'étaient pas
+                                contrôlées, facilitant la prise de contrôle à distance.</p>
+                            <p>• <strong>Mauvaises configurations :</strong> Des tâches planifiées mal sécurisées ont
+                                permis de maintenir un accès persistant.</p>
+                            <p>• <strong>Manque de segmentation :</strong> L'accès à d'autres machines du réseau était
+                                possible depuis une machine compromise.</p>
+                        </ul>
+                        <p>Ce projet m'a permis d'appliquer des techniques d'analyse des systèmes pour mieux comprendre
+                            les risques et proposer des recommandations de sécurité adaptées.</p>
+                        <a href="ANNEXE_DYSHLEVYY_PENTEST.pdf " target="_blank">Annexe de Pentest</a>
                     </div>
-                    <button id="show-popup-btn-9">Voir Plus</button>
-                </li>
+                </div>
+                <button id="show-popup-btn-9">Voir Plus</button>
+            </li>
 
 
-                <li class="info-item">
-                    <img src="sae33.png" alt="SAE33">
-                    <h3>Concevoir un réseau informatique sécurisé multi-sites</h3>
-                    <div class="popup" id="popup-10">
-                        <div class="overlay"></div>
-                        <div class="content" style="line-height: 1.8;"> 
-                            <div class="close-btn">&times;</div>
-                            <h4>Concevoir un réseau informatique sécurisé multi-sites</h4>
-                            <p>Dans le cadre de ce projet réalisé sur des équipements réels, nous avons conçu et sécurisé un réseau local. Ce projet a impliqué :<br>
-                               • <strong>HSRP</strong> et <strong>STP (RSTP)</strong> pour la redondance et la robustesse.<br>
-                               • La sécurisation du réseau local via des <strong>VLANs</strong> et des <strong>ACLs</strong>.<br>
-                               • Le déploiement d'un pare-feu ASA avec des zones <strong>inside</strong>, <strong>outside</strong> et <strong>DMZ</strong>.<br>
-                               • La connexion sécurisée entre les différents départements via un <strong>VPN IPsec</strong> configuré sur l'ASA.
-                            </p>
-                            <p>Nous avons testé et validé la solution pour garantir une sécurité et une disponibilité optimales du réseau.</p>
-                            <p>Voici le fichier ZIP contenant les configurations et documents associés au projet :</p>
-                            <a href="https://drive.google.com/file/d/1jweL8uFpgovuFe_ahWcIkqkxbrcTmB0M/view?usp=sharing" target="_blank">Fichier ZIP du projet</a>
-                        </div>
+            <li class="info-item">
+                <img src="sae33.png" alt="SAE33">
+                <h3>Concevoir un réseau informatique sécurisé multi-sites</h3>
+                <div class="popup" id="popup-10">
+                    <div class="overlay"></div>
+                    <div class="content" style="line-height: 1.8;">
+                        <div class="close-btn">&times;</div>
+                        <h4>Concevoir un réseau informatique sécurisé multi-sites</h4>
+                        <p>Dans le cadre de ce projet réalisé sur des équipements réels, nous avons conçu et sécurisé un
+                            réseau local. Ce projet a impliqué :<br>
+                            • <strong>HSRP</strong> et <strong>STP (RSTP)</strong> pour la redondance et la
+                            robustesse.<br>
+                            • La sécurisation du réseau local via des <strong>VLANs</strong> et des
+                            <strong>ACLs</strong>.<br>
+                            • Le déploiement d'un pare-feu ASA avec des zones <strong>inside</strong>,
+                            <strong>outside</strong> et <strong>DMZ</strong>.<br>
+                            • La connexion sécurisée entre les différents départements via un <strong>VPN IPsec</strong>
+                            configuré sur l'ASA.
+                        </p>
+                        <p>Nous avons testé et validé la solution pour garantir une sécurité et une disponibilité
+                            optimales du réseau.</p>
+                        <p>Voici le fichier ZIP contenant les configurations et documents associés au projet :</p>
+                        <a href="https://drive.google.com/file/d/1jweL8uFpgovuFe_ahWcIkqkxbrcTmB0M/view?usp=sharing"
+                            target="_blank">Fichier ZIP du projet</a>
                     </div>
-                    <button id="show-popup-btn-10">Voir Plus</button>
-                </li>
-                
-
-                
-
-            </ul>
+                </div>
+                <button id="show-popup-btn-10">Voir Plus</button>
+            </li>
 
 
-            <h4>Informatique</h4>
-            <ul class="info">
-                
 
 
-                <li class="info-item">
-                    <img src="thales.png" alt="Thales" >
-                    <h3>Développement d'un Site Web Dynamique</h3> 
-                    <div class="popup" id="popup-8">
-                        <div class="overlay"></div>
-                        <div class="content">
-                          <div class="close-btn">&times;</div>
-                          <h4>Développement d'un Site Web Dynamique</h4>
-                          <p>Dans le cadre d'un projet collaboratif Thales, notre groupe a développé un site web dynamique en PHP. Ce projet avait pour objectif de permettre l'affichage et la modification d'une base de données SQL. Grâce à l'utilisation de PHP, nous avons créé une interface utilisateur interactive qui facilite la gestion des données. Ce projet a  renforcé nos compétences en développement web, en gestion de bases de données et en gestion du travail en groupe.</p>
-                          <img src="site1.png" alt="Site1">
-                          <img src="site2.png" alt="Site2">
-                        </div>
-                      </div>
-                      <button id="show-popup-btn-8">Voir Plus</button>
-                </li>
+        </ul>
 
-
-                <li class="info-item">
-                    <img src="android.webp" alt="Application Android ">
-                    <h3>Développement d'une application Android </h3>
-                    <div class="popup" id="popup-11">
-                        <div class="overlay"></div>
-                        <div class="content">
-                            <div class="close-btn">&times;</div>
-                            <h4>Développement d'une application Android</h4>
-                            <p>Notre objectif dans ce projet était de créer un jeu <strong>Tic-Tac-Toe</strong> permettant aux joueurs de :</p>
-                            <br>• Jouer en mode manuel (2 joueurs humains) avec une interface Android intuitive.
-                            <br>• Enregistrer les statistiques des joueurs (victoires, défaites, égalités) dans une base de données.
-                            <br>• Consulter ces statistiques via l'application Android ou un serveur web dédié.
-                            <br>• Gérer les interactions client-serveur pour synchroniser les données en temps réel.
-                            <p>Ce projet a renforcé nos compétences en Java, en conception d'interfaces utilisateurs Android, et en gestion de bases de données connectées à un serveur.</p>
-                            <p>Voici une capture d'écran illustrant l'interface du projet :</p>
-                            <img src="sae32.png" alt="Capture d'écran Tic-Tac-Toe" style="width:100%; margin-top:10px;">
-                        </div>
+        <ul class="info">
+            <li class="info-item">
+                <img src="stormshield.png" alt="Stormshield CSNA">
+                <h3>Certification Stormshield CSNA</h3>
+                <div class="popup" id="popup-13">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Certification Stormshield CSNA</h4>
+                        <p>J’ai obtenu la certification Stormshield CSNA, qui m’a permis de découvrir l’administration
+                            et la sécurisation d’un pare-feu Stormshield.</p>
+                        <p>Cette certification couvre des notions importantes comme le filtrage réseau, les règles de
+                            sécurité, la translation d’adresses, les VPN, les logs et les bonnes pratiques de
+                            configuration d’un pare-feu.</p>
+                        <p>Elle complète mes compétences en cybersécurité réseau et en protection des infrastructures.
+                        </p>
                     </div>
-                    <button id="show-popup-btn-11">Voir Plus</button>
-                </li>
-              
-            </ul>
-
-            
-            
+                </div>
+                <button id="show-popup-btn-13">Voir Plus</button>
+            </li>
 
 
+            <li class="info-item">
+                <img src="cyberwatch.png" alt="Cyber Watch">
+                <h3>Plateforme d'audit de cybersécurité : Cyber Watch</h3>
+                <div class="popup" id="popup-15">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Plateforme d'audit de cybersécurité : Cyber Watch</h4>
+                        <p>Dans le cadre de la SAÉ 4.1 Cybersécurité, nous avons conçu Cyber Watch, une plateforme web
+                            destinée à automatiser un audit de cybersécurité et à générer un rapport clair pour le
+                            client.</p>
+                        <p>Le projet consistait à définir une surface d’attaque, sélectionner plusieurs outils de
+                            pentesting, organiser leur enchaînement et proposer un système de scoring pour évaluer les
+                            résultats obtenus.</p>
+                        <p>La plateforme intégrait plusieurs étapes : reconnaissance passive, identification des hôtes
+                            actifs, scan de ports, détection de technologies web, analyse de vulnérabilités, tests
+                            d’injection SQL et génération d’un rapport d’audit.</p>
+                        <p>Ce projet m’a permis de mieux comprendre la logique d’un audit de sécurité web,
+                            l’automatisation d’outils de pentest et la présentation des résultats de manière
+                            exploitable.</p>
+                        <a href="ScanSafe.pdf" target="_blank">Diaporama du projet</a>
+                        <a href="Annexe.pdf" target="_blank">Annexe technique du projet</a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-15">Voir Plus</button>
+            </li>
+
+        </ul>
 
 
-            <h4>Communication et Langues</h4>
-            <ul class="info">
-                
+        <h4>Informatique</h4>
+        <ul class="info">
+
+            <li class="info-item">
+                <img src="thales.png" alt="Thales">
+                <h3>Développement d'un Site Web Dynamique</h3>
+                <div class="popup" id="popup-8">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Développement d'un Site Web Dynamique</h4>
+                        <p>Dans le cadre d'un projet collaboratif Thales, notre groupe a développé un site web dynamique
+                            en PHP. Ce projet avait pour objectif de permettre l'affichage et la modification d'une base
+                            de données SQL. Grâce à l'utilisation de PHP, nous avons créé une interface utilisateur
+                            interactive qui facilite la gestion des données. Ce projet a renforcé nos compétences en
+                            développement web, en gestion de bases de données et en gestion du travail en groupe.</p>
+                        <img src="site1.png" alt="Site1">
+                        <img src="site2.png" alt="Site2">
+                    </div>
+                </div>
+                <button id="show-popup-btn-8">Voir Plus</button>
+            </li>
 
 
-                <li class="info-item">
-                    <img src="interview.png" alt="Interview" >
-                    <h3>Réalisation d'Entretien</h3> 
-                    <div class="popup" id="popup-5">
-                        <div class="overlay"></div>
-                        <div class="content">
-                          <div class="close-btn">&times;</div>
-                          <h4>Réalisation d'Entretien</h4>
-                          <p>Au cours de ma formation à l'IUT de Sophia Antipolis, nous avons réalisé de nombreux projets impliquant des compétences orales, l'un de ces projets étant l'interview d'un professionnel. </p>
-                          <p>Mon binôme et moi avons trouvé et contacté un professionnel, convenu d'une date de rendez-vous, réalisé l'interview, et enfin présenté nos résultats à nos professeurs sous forme d'une présentation orale.</p>
-                          <p>Grâce à ce projet, on a appris à agrandir notre réseau relationnel et à gérer un entretien.</p>
-                          <p>Voici la présentation qu'on a fait pour le projet :</p>
-                          <a href="ALLANO-DYSHLEVYY_R111-diapo_NABEDRIK.pdf " target="_blank">Présentation Interview</a> 
-                        </div>
-                      </div>
-                      <button id="show-popup-btn-5">Voir Plus</button>
-                </li>
+            <li class="info-item">
+                <img src="android.webp" alt="Application Android ">
+                <h3>Développement d'une application Android </h3>
+                <div class="popup" id="popup-11">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Développement d'une application Android</h4>
+                        <p>Notre objectif dans ce projet était de créer un jeu <strong>Tic-Tac-Toe</strong> permettant
+                            aux joueurs de :</p>
+                        <br>• Jouer en mode manuel (2 joueurs humains) avec une interface Android intuitive.
+                        <br>• Enregistrer les statistiques des joueurs (victoires, défaites, égalités) dans une base de
+                        données.
+                        <br>• Consulter ces statistiques via l'application Android ou un serveur web dédié.
+                        <br>• Gérer les interactions client-serveur pour synchroniser les données en temps réel.
+                        <p>Ce projet a renforcé nos compétences en Java, en conception d'interfaces utilisateurs
+                            Android, et en gestion de bases de données connectées à un serveur.</p>
+                        <p>Voici une capture d'écran illustrant l'interface du projet :</p>
+                        <img src="sae32.png" alt="Capture d'écran Tic-Tac-Toe" style="width:100%; margin-top:10px;">
+                    </div>
+                </div>
+                <button id="show-popup-btn-11">Voir Plus</button>
+            </li>
+
+            <li class="info-item">
+                <img src="metalops.png" alt="MetalOps">
+                <h3>Déploiement continu avec Proxmox, Terraform et Ansible</h3>
+                <div class="popup" id="popup-18">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Déploiement continu avec Proxmox, Terraform et Ansible</h4>
+                        <p>Dans ce projet, nous avons mis en place une solution DevOps permettant d’automatiser le
+                            déploiement d’une infrastructure composée d’un load balancer et de deux serveurs web.</p>
+                        <p>Le contexte était celui d’une entreprise rencontrant des retards de livraison à cause de
+                            déploiements manuels réalisés par les équipes Ops. L’objectif était de remplacer ces
+                            pratiques par une solution reproductible, fiable et automatisée.</p>
+                        <p>Nous avons utilisé Proxmox pour la virtualisation, Terraform pour créer automatiquement les
+                            machines virtuelles, Ansible pour configurer les services, et Nginx pour mettre en place le
+                            load balancing.</p>
+                        <p>Ce projet m’a permis de renforcer mes compétences en Infrastructure as Code, automatisation,
+                            virtualisation, administration système, réseau et méthodes DevOps.</p>
+                        <a href="SAE_RAPPTECH_DYSHLEVYY_RETIERE_HERBRECHT-BOURGOIN.pdf" target="_blank">Rapport
+                            technique</a>
+                        <a href="SAE_SOUTENANCE_DYSHLEVYY_RETIERE_HERBRECHT-BOURGOIN.pdf" target="_blank">Diaporama de
+                            soutenance</a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-18">Voir Plus</button>
+            </li>
+        </ul>
+
+        <ul class="info">
+            <li class="info-item">
+                <img src="technova.png" alt="TechNova">
+                <h3>Projet TechNova : sécurisation d’un système d’information</h3>
+                <div class="popup" id="popup-19">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Projet TechNova : sécurisation d’un système d’information</h4>
+                        <p>Dans ce projet de groupe, nous devions proposer une solution complète pour moderniser et
+                            sécuriser le système d’information de l’entreprise fictive TechNova Industries.</p>
+                        <p>Le contexte était celui d’une PME internationale en forte croissance, avec plusieurs sites en
+                            Europe, au Maroc et aux États-Unis, mais dont l’infrastructure informatique présentait des
+                            faiblesses importantes.</p>
+                        <p>Nous avons travaillé sur plusieurs axes : architecture réseau, segmentation VLAN,
+                            cybersécurité, Active Directory, sécurité physique, téléphonie, câblage, parc informatique,
+                            supervision et conformité.</p>
+                        <p>Une journée de POC nous a permis de présenter une partie concrète de la solution proposée et
+                            de montrer comment elle pouvait répondre aux besoins de sécurité, de fiabilité et
+                            d’évolution de l’entreprise.</p>
+                        <p>Ce projet m’a permis d’avoir une vision plus globale d’un système d’information d’entreprise
+                            et de mieux comprendre les choix techniques à faire pour sécuriser une infrastructure.</p>
+                        <a href="TechNova sujet.pdf" target="_blank">Sujet du projet</a>
+                        <a href="TechNova_Solution.pdf" target="_blank">Diaporama de soutenance</a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-19">Voir Plus</button>
+            </li>
+        </ul>
+
+        <h4>Compétences techniques</h4>
+
+        <ul class="info">
+            <li class="info-item">
+                <img src="devops.png" alt="DevOps">
+                <h3>DevOps, CI/CD et GitOps</h3>
+
+                <div class="popup" id="popup-20">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>DevOps, CI/CD et GitOps</h4>
+
+                        <p>J’ai travaillé sur des projets utilisant des pratiques DevOps pour automatiser le
+                            déploiement, améliorer la fiabilité des services et réduire les actions manuelles.</p>
+
+                        <p>J’ai utilisé GitLab CI/CD pour automatiser des pipelines, gérer des variables sécurisées et
+                            lancer des scripts de déploiement ou de test.</p>
+
+                        <p>J’ai également découvert GitOps avec Kubernetes et ArgoCD, où l’état de l’infrastructure est
+                            piloté depuis un dépôt Git.</p>
+                    </div>
+                </div>
+
+                <button id="show-popup-btn-20">Voir Plus</button>
+            </li>
+
+            <li class="info-item">
+                <img src="kubernetes.png" alt="Docker Kubernetes">
+                <h3>Docker, Kubernetes et conteneurisation</h3>
+
+                <div class="popup" id="popup-21">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Docker, Kubernetes et conteneurisation</h4>
+
+                        <p>J’ai utilisé Docker pour créer des environnements reproductibles, isoler des applications et
+                            faciliter leur déploiement.</p>
+
+                        <p>J’ai également travaillé avec Kubernetes pour déployer des applications, gérer des services,
+                            des namespaces et comprendre le fonctionnement d’une architecture cloud-native.</p>
+
+                        <p>Ces compétences me permettent de mieux comprendre le déploiement moderne d’applications et
+                            l’orchestration de conteneurs.</p>
+                    </div>
+                </div>
+
+                <button id="show-popup-btn-21">Voir Plus</button>
+            </li>
+
+            <li class="info-item">
+                <img src="iac.png" alt="Infrastructure as Code">
+                <h3>Proxmox, Terraform et Ansible</h3>
+
+                <div class="popup" id="popup-22">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Proxmox, Terraform et Ansible</h4>
+
+                        <p>J’ai utilisé Proxmox pour créer et gérer des machines virtuelles dans un environnement de
+                            virtualisation.</p>
+
+                        <p>Avec Terraform, j’ai automatisé la création d’infrastructures, notamment le provisionnement
+                            de machines virtuelles à partir de fichiers de configuration.</p>
+
+                        <p>Avec Ansible, j’ai automatisé la configuration des services, l’installation de paquets et le
+                            déploiement d’applications sur plusieurs machines.</p>
+                    </div>
+                </div>
+
+                <button id="show-popup-btn-22">Voir Plus</button>
+            </li>
+        </ul>
+
+        <ul class="info">
+            <li class="info-item">
+                <img src="supervision.png" alt="Supervision">
+                <h3>Supervision système avec Centreon et SNMP</h3>
+
+                <div class="popup" id="popup-23">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Supervision système avec Centreon et SNMP</h4>
+
+                        <p>J’ai travaillé sur la supervision de systèmes et d’équipements réseau avec Centreon et SNMP.
+                        </p>
+
+                        <p>Ces outils permettent de surveiller l’état des machines, des services, des interfaces réseau,
+                            de détecter les incidents et d’alerter rapidement en cas de problème.</p>
+
+                        <p>Cette compétence est importante pour assurer la disponibilité, la maintenance et le suivi
+                            d’une infrastructure informatique.</p>
+                    </div>
+                </div>
+
+                <button id="show-popup-btn-23">Voir Plus</button>
+            </li>
+
+            <li class="info-item">
+                <img src="activedirectory.png" alt="Active Directory">
+                <h3>Active Directory et administration Windows Server</h3>
+
+                <div class="popup" id="popup-24">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Active Directory et administration Windows Server</h4>
+
+                        <p>J’ai travaillé sur l’administration d’un domaine Active Directory avec Windows Server.</p>
+
+                        <p>J’ai configuré des contrôleurs de domaine, des utilisateurs, des groupes, des unités
+                            d’organisation, des stratégies de groupe GPO et des services DNS.</p>
+
+                        <p>Cette expérience m’a permis de mieux comprendre la gestion centralisée des comptes, des
+                            droits d’accès et des politiques de sécurité dans une entreprise.</p>
+                    </div>
+                </div>
+
+                <button id="show-popup-btn-24">Voir Plus</button>
+            </li>
+
+            <li class="info-item">
+                <img src="hardenad.png" alt="Hardening Active Directory">
+                <h3>Sécurisation Active Directory et HardenAD</h3>
+
+                <div class="popup" id="popup-25">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Sécurisation Active Directory et HardenAD</h4>
+
+                        <p>J’ai étudié différentes méthodes pour renforcer la sécurité d’un environnement Active
+                            Directory.</p>
+
+                        <p>J’ai découvert des outils et bonnes pratiques comme PingCastle, BloodHound, Purple Knight et
+                            HardenAD pour analyser les faiblesses, identifier les mauvaises configurations et appliquer
+                            des mesures de durcissement.</p>
+
+                        <p>Les objectifs principaux sont de réduire les comptes à privilèges, renforcer les GPO,
+                            segmenter les rôles administratifs, limiter les mouvements latéraux et améliorer la sécurité
+                            globale du domaine.</p>
+                    </div>
+                </div>
+
+                <button id="show-popup-btn-25">Voir Plus</button>
+            </li>
+        </ul>
+
+        <h4>Communication et Langues</h4>
+        <ul class="info">
 
 
-                <li class="info-item">
-                    <img src="english.jpg" alt="English" >
-                    <h3>Anglais</h3>
-                    <div class="popup" id="popup-6">
-                        <div class="overlay"></div>
-                        <div class="content">
-                          <div class="close-btn">&times;</div>
-                          <h4>Anglais</h4>
-                          <p>Lors de ma formation j'ai appris à communiquer et à utiliser l’anglais technique dans mon parcours professionnel. J’ai renforcé mes compétences grammaticales en anglais et je me sens plus à l'aise lorsque je rédige un rapport ou parle de technologies en anglais.</p>
-                          <p>Voici un rapport dans lequel j'ai utilisé mes compétences en anglais :</p>
-                          <a href="Rapport Thalès-Thales01.pdf" target="_blank">Rapport Thalès</a> 
-                          <p>Voici une vidéo CV que j'ai réalisée en anglais :</p>
-                          <iframe src="https://drive.google.com/file/d/1Yt9447BGHT-fLhQwA-blzzFdRK8pJj0g/preview" width="854" height="480" allow="autoplay"></iframe>
-                        </div>
-                      </div>
-                      <button id="show-popup-btn-6">Voir Plus</button>
-                </li>
 
-                <li class="info-item">
-                    <img src="langues.jpg" alt="Langues" >
-                    <h3>Langues Étrangères</h3> 
-                    <div class="popup" id="popup-7">
-                        <div class="overlay"></div>
-                        <div class="content">
-                          <div class="close-btn">&times;</div>
-                          <h4>Langues Étrangères</h4>
-                          <p>Je m'efforce toujours d'apprendre des langues étrangères pour rencontrer de nouvelles personnes et saisir de nouvelles opportunités. </p>
-                          <p>Voici les langues que je connais :</p>
-                          <p>Français - courant (B2+) </p>
-                          <p> Anglais - courant</p> 
-                            <p> Espagnol - bonnes bases </p>
-                            <p> Russe - bilingue </p>
-                            <p> Ukrainien - langue maternelle </p>
-                            
-                          
-                        </div>
-                      </div>
-                      <button id="show-popup-btn-7">Voir Plus</button>
-                </li>
-    
-    
-            </ul>
-            
-
-           
-
-        
+            <li class="info-item">
+                <img src="interview.png" alt="Interview">
+                <h3>Réalisation d'Entretien</h3>
+                <div class="popup" id="popup-5">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Réalisation d'Entretien</h4>
+                        <p>Au cours de ma formation à l'IUT de Sophia Antipolis, nous avons réalisé de nombreux projets
+                            impliquant des compétences orales, l'un de ces projets étant l'interview d'un professionnel.
+                        </p>
+                        <p>Mon binôme et moi avons trouvé et contacté un professionnel, convenu d'une date de
+                            rendez-vous, réalisé l'interview, et enfin présenté nos résultats à nos professeurs sous
+                            forme d'une présentation orale.</p>
+                        <p>Grâce à ce projet, on a appris à agrandir notre réseau relationnel et à gérer un entretien.
+                        </p>
+                        <p>Voici la présentation qu'on a fait pour le projet :</p>
+                        <a href="ALLANO-DYSHLEVYY_R111-diapo_NABEDRIK.pdf " target="_blank">Présentation Interview</a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-5">Voir Plus</button>
+            </li>
 
 
-        </div>
-            
-    
+            <li class="info-item">
+                <img src="english.jpg" alt="English">
+                <h3>Anglais</h3>
+                <div class="popup" id="popup-6">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Anglais</h4>
+                        <p>Lors de ma formation j'ai appris à communiquer et à utiliser l’anglais technique dans mon
+                            parcours professionnel. J’ai renforcé mes compétences grammaticales en anglais et je me sens
+                            plus à l'aise lorsque je rédige un rapport ou parle de technologies en anglais.</p>
+                        <p>Voici un rapport dans lequel j'ai utilisé mes compétences en anglais :</p>
+                        <a href="Rapport Thalès-Thales01.pdf" target="_blank">Rapport Thalès</a>
+                        <p>Voici une vidéo CV que j'ai réalisée en anglais :</p>
+                        <iframe src="https://drive.google.com/file/d/1Yt9447BGHT-fLhQwA-blzzFdRK8pJj0g/preview"
+                            width="854" height="480" allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <button id="show-popup-btn-6">Voir Plus</button>
+            </li>
+
+            <li class="info-item">
+                <img src="langues.jpg" alt="Langues">
+                <h3>Langues Étrangères</h3>
+                <div class="popup" id="popup-7">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Langues Étrangères</h4>
+                        <p>Je m'efforce toujours d'apprendre des langues étrangères pour rencontrer de nouvelles
+                            personnes et saisir de nouvelles opportunités. </p>
+                        <p>Voici les langues que je connais :</p>
+                        <p>Français - courant (B2+) </p>
+                        <p> Anglais - courant</p>
+                        <p> Espagnol - bonnes bases </p>
+                        <p> Russe - bilingue </p>
+                        <p> Ukrainien - langue maternelle </p>
+
+
+                    </div>
+                </div>
+                <button id="show-popup-btn-7">Voir Plus</button>
+            </li>
+
+
+        </ul>
+
+        <ul class="info">
+            <li class="info-item">
+                <img src="voltaire.png" alt="Certificat Voltaire">
+                <h3>Certificat Voltaire</h3>
+                <div class="popup" id="popup-14">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn">&times;</div>
+                        <h4>Certificat Voltaire</h4>
+                        <p>J’ai obtenu le Certificat Voltaire, qui évalue le niveau de maîtrise de l’orthographe et de
+                            l’expression écrite en français.</p>
+                        <p>Cette certification est importante pour mon parcours, car elle montre ma capacité à rédiger
+                            des documents professionnels, des rapports techniques et des comptes rendus de manière
+                            claire et soignée.</p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-14">Voir Plus</button>
+            </li>
+
+        </ul>
+
+
+
+
+
+
+
+    </div>
+
+
     <footer>
         <p>&copy; 2023 Dyshlevyy Bohdan </p>
     </footer>
 
 </body>
+
 </html>
