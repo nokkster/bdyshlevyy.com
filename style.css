@@ -70,7 +70,7 @@ header {
     width: 70%;
     margin: 0 auto;
     align-items: center;
-    padding: 20 px;
+    padding: 20px;
 }
 
 .info {
@@ -84,6 +84,7 @@ header {
 }
 
 .info-item {
+    gap: 20px;
     background-color: #333333;
     padding: 35px;
     margin-bottom: 20px;
@@ -93,6 +94,7 @@ header {
     display: flex;
     border-radius: 10px;
     font-size: 16.5px;
+    align-items: center;
 }
 
 .info-text {
@@ -102,9 +104,10 @@ header {
 }
 
 .pfp {
-    width: 30%;
-    height: auto;
-    margin-right: 20px;
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .info-text {
@@ -185,4 +188,28 @@ footer {
     text-align: center;
     padding: 10px;
     clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pfp {
+        width: 220px;
+        height: 220px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .info-text {
+        width: 100%;
+        padding: 0;
+    }
 }
