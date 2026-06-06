@@ -89,6 +89,8 @@ header nav ul li a.logo:hover {
 }
 
 .info-item {
+  align-items: center;
+  gap: 20px;
   background-color: #333333;
   padding: 20px;
   margin-bottom: 20px;
@@ -107,27 +109,16 @@ header nav ul li a.logo:hover {
 }
 
 
-.gym {
-  width: auto;
-  height: 280px;
-  margin-right: 20px;
-}
-
-
-.music {
-width: auto;
-height: 310px;
-margin-right: 20px;
-}
-
+.gym,
+.music,
 .ski {
-width: auto;
-height: 300px;
-margin-right: 20px;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+  flex-shrink: 0;
 }
-
-
-
 
 .info-text {
   width: 70%;
@@ -183,4 +174,30 @@ footer {
   text-align: center;
   padding: 10px;
   clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .gym,
+  .music,
+  .ski {
+    width: 220px;
+    height: 220px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }

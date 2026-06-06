@@ -217,15 +217,11 @@ a {
   transform: translate(-50%, -50%) scale(1);
 }
 
-#show-popup-btn-1,
-#show-popup-btn-2,
-#show-popup-btn-3 {
+.info-item button {
   background-color: #5d91b6;
   color: white;
   padding: 10px 20px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin-top: 10px;
   cursor: pointer;
@@ -235,9 +231,7 @@ a {
   transition: background-color 0.3s ease;
 }
 
-#show-popup-btn-1:hover,
-#show-popup-btn-2:hover,
-#show-popup-btn-3:hover {
+.info-item button:hover {
   background-color: #888888;
 }
 
@@ -248,4 +242,53 @@ footer {
   text-align: center;
   padding: 10px;
   clear: both;
+}
+
+@media screen and (max-width: 900px) {
+  .info {
+    flex-wrap: wrap;
+  }
+
+  .info li {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info li {
+    width: 100%;
+  }
+
+  .info-item img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .popup .content {
+    max-width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .media-container {
+    flex-direction: column;
+  }
+
+  .video-wrapper,
+  .image-wrapper {
+    width: 100%;
+  }
 }
