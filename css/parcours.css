@@ -1,0 +1,361 @@
+/* =========================
+   PARCOURS HERO
+========================= */
+
+.parcours-hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 150px 30px 70px;
+    text-align: center;
+}
+
+.parcours-hero h1 {
+    margin: 5px 0 0;
+    color: #ffffff;
+    font-size: clamp(40px, 5.5vw, 62px);
+    line-height: 1.08;
+    font-weight: 900;
+}
+
+.parcours-hero h1 span {
+    color: var(--accent);
+}
+
+.parcours-intro {
+    max-width: 700px;
+    margin: 22px auto 0;
+    color: var(--text-secondary);
+    font-size: 17px;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+    position: relative;
+    width: min(1080px, calc(100% - 60px));
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    bottom: 18px;
+    left: 55px;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        rgba(165, 182, 93, 0.15),
+        var(--accent),
+        rgba(165, 182, 93, 0.15)
+    );
+}
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 28px;
+    margin-bottom: 34px;
+}
+
+.timeline-marker {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+}
+
+.timeline-marker span {
+    width: 70px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(165, 182, 93, 0.45);
+    border-radius: 999px;
+    background: #252525;
+    box-shadow: 0 0 0 8px #222222;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.timeline-item.current .timeline-marker span {
+    background: var(--accent);
+    color: #171717;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.timeline-card {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: rgba(45, 45, 45, 0.84);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+    transition:
+        border-color 0.22s ease,
+        background 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+.timeline-card:hover {
+    border-color: rgba(165, 182, 93, 0.45);
+    background: rgba(48, 48, 48, 0.95);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.24);
+}
+
+.timeline-card > img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    background: #262626;
+}
+
+.timeline-content {
+    padding: 30px 32px 32px;
+}
+
+.timeline-date {
+    margin: 0 0 5px;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.timeline-content h2 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 1.25;
+}
+
+.timeline-content > p {
+    margin: 0 0 16px;
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.timeline-content strong {
+    color: #ededed;
+}
+
+.timeline-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 7px;
+    padding: 10px 15px;
+    border: 1px solid rgba(165, 182, 93, 0.45);
+    border-radius: 8px;
+    background: rgba(165, 182, 93, 0.08);
+    color: var(--accent-light);
+    font-size: 14px;
+    font-weight: 900;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.timeline-link:hover {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: #171717;
+}
+
+
+/* =========================
+   ACHIEVEMENTS
+========================= */
+
+.achievement-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.achievement {
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.achievement strong {
+    color: var(--accent);
+    font-size: 14px;
+}
+
+.achievement span {
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.achievement a {
+    color: var(--accent-light);
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.achievement a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================
+   INTERNSHIP CALLOUT
+========================= */
+
+.internship-callout {
+    margin: 24px 0 12px;
+    padding: 18px 20px;
+    border: 1px solid rgba(165, 182, 93, 0.35);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    background: rgba(165, 182, 93, 0.07);
+}
+
+.internship-callout span {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.internship-callout p {
+    margin: 0;
+    color: #c5c5c5;
+    line-height: 1.65;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 900px) {
+    .timeline {
+        width: min(92%, 760px);
+    }
+
+    .timeline::before {
+        left: 39px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 78px minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .timeline-marker span {
+        width: 62px;
+        box-shadow: 0 0 0 6px #222222;
+    }
+
+    .timeline-card {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-card > img {
+        height: 260px;
+        min-height: 0;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 700px) {
+    .parcours-hero {
+        padding: 130px 20px 50px;
+    }
+
+    .parcours-hero h1 {
+        font-size: 40px;
+    }
+
+    .parcours-intro {
+        font-size: 15px;
+    }
+
+    .timeline {
+        width: calc(100% - 30px);
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-item {
+        display: block;
+        margin-bottom: 22px;
+    }
+
+    .timeline-marker {
+        justify-content: flex-start;
+        padding: 0 0 10px 6px;
+    }
+
+    .timeline-marker span {
+        width: auto;
+        height: 31px;
+        padding: 0 12px;
+        box-shadow: none;
+    }
+
+    .timeline-card {
+        border-radius: 14px;
+    }
+
+    .timeline-card > img {
+        height: 220px;
+    }
+
+    .timeline-content {
+        padding: 24px 20px 25px;
+    }
+
+    .timeline-content h2 {
+        font-size: 22px;
+    }
+
+    .timeline-content > p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .achievement {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .achievement a {
+        white-space: normal;
+    }
+}

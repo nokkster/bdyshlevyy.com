@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interests | Bohdan Dyshlevyy</title>
+    <meta name="description"
+        content="Discover Bohdan Dyshlevyy's interests outside of studies and technical projects: sports, music, skiing and hiking.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/passions.css">
+
+    <script src="js/passionsscr.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index-en.html" class="logo">BD.</a>
+
+            <ul>
+                <li><a href="index-en.html">Home</a></li>
+                <li><a href="portfolio-en.html">Portfolio</a></li>
+                <li><a href="parcours-en.html">Background</a></li>
+                <li><a href="passions-en.html" class="active">Interests</a></li>
+            </ul>
+
+            <a href="passions.html" class="language-switch">FR</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="passions-hero">
+            <p class="section-label">Interests</p>
+            <h1>What I am <span>passionate about</span></h1>
+            <p class="passions-intro">
+                Outside of my studies and technical projects, I enjoy spending time on sports,
+                music and outdoor activities.
+            </p>
+        </section>
+
+        <section class="passions-grid">
+
+            <article class="passion-card">
+                <img src="images/gym.png" alt="Sports and strength training">
+
+                <div class="passion-card-content">
+                    <p class="passion-type">Sports</p>
+                    <h2>Sports &amp; strength training</h2>
+                    <p>
+                        Swimming, gymnastics and strength training are an important part
+                        of my routine.
+                    </p>
+
+                    <button id="show-popup-btn-1">Learn more</button>
+                </div>
+
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <button class="close-btn" aria-label="Close">&times;</button>
+
+                        <p class="popup-label">Sports</p>
+                        <h3>Sports &amp; strength training</h3>
+
+                        <p>
+                            Sport has been part of my routine for several years.
+                            I practised swimming and gymnastics during my teenage years,
+                            and I started strength training in 2022.
+                        </p>
+
+                        <p>
+                            These activities help me develop discipline, consistency and balance.
+                            They also allow me to stay active and set goals outside of my studies.
+                        </p>
+
+                        <img src="images/gym.jpg" alt="Training at the gym">
+                    </div>
+                </div>
+            </article>
+
+            <article class="passion-card">
+                <img src="images/musique.png" alt="Music">
+
+                <div class="passion-card-content">
+                    <p class="passion-type">Music</p>
+                    <h2>Guitar, drums &amp; singing</h2>
+                    <p>
+                        Music has been part of my life since childhood, both individually
+                        and as part of a group.
+                    </p>
+
+                    <button id="show-popup-btn-2">Learn more</button>
+                </div>
+
+                <div class="popup" id="popup-2">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <button class="close-btn" aria-label="Close">&times;</button>
+
+                        <p class="popup-label">Music</p>
+                        <h3>Guitar, drums &amp; singing</h3>
+
+                        <p>
+                            I started playing guitar at the age of 9 before discovering
+                            drums and singing. I later played in several bands, both at school
+                            and at a music school.
+                        </p>
+
+                        <p>
+                            Playing with other musicians taught me to listen, adapt and work
+                            together towards a common goal.
+                        </p>
+
+                        <a class="popup-link"
+                            href="https://www.youtube.com/@playtoday.studio/videos"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Visit my music school's YouTube channel
+                        </a>
+
+                        <div class="embed-wrapper">
+                            <iframe
+                                src="https://drive.google.com/file/d/11eoG0-JZeBkf6h03gtxAZXapz5aUPREk/preview"
+                                allow="autoplay"
+                                title="Music video">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="passion-card">
+                <img src="images/ski.png" alt="Skiing">
+
+                <div class="passion-card-content">
+                    <p class="passion-type">Mountains</p>
+                    <h2>Skiing</h2>
+                    <p>
+                        I discovered skiing in 2022 and particularly enjoy the ski resorts
+                        in the Alpes-Maritimes.
+                    </p>
+
+                    <button id="show-popup-btn-3">Learn more</button>
+                </div>
+
+                <div class="popup" id="popup-3">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <button class="close-btn" aria-label="Close">&times;</button>
+
+                        <p class="popup-label">Mountains</p>
+                        <h3>Skiing</h3>
+
+                        <p>
+                            I started skiing in 2022 and have gradually reached an intermediate level.
+                            I particularly enjoy skiing at Auron, Colmiane and Isola 2000.
+                        </p>
+
+                        <p>
+                            Skiing combines physical activity, concentration and time in the mountains,
+                            which makes it one of my favourite winter activities.
+                        </p>
+
+                        <div class="ski-media">
+                            <video controls preload="metadata">
+                                <source src="media/ski.mp4" type="video/mp4">
+                                Your browser does not support video playback.
+                            </video>
+
+                            <img src="images/ski1.jpg" alt="Skiing day">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="passion-card">
+                <img src="images/hiking.png" alt="Hiking">
+
+                <div class="passion-card-content">
+                    <p class="passion-type">Outdoors</p>
+                    <h2>Hiking</h2>
+                    <p>
+                        I enjoy discovering new landscapes and spending time in nature
+                        with my friends.
+                    </p>
+
+                    <button id="show-popup-btn-4">Learn more</button>
+                </div>
+
+                <div class="popup" id="popup-4">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <button class="close-btn" aria-label="Close">&times;</button>
+
+                        <p class="popup-label">Outdoors</p>
+                        <h3>Hiking</h3>
+
+                        <p>
+                            I enjoy hiking with my friends to discover new landscapes,
+                            spend time in nature and take a break after busy periods of work or study.
+                        </p>
+
+                        <p>
+                            These trips are also a good way to stay active, explore the region
+                            and simply spend time together.
+                        </p>
+
+                        <img src="images/hiking-landscape.jpg" alt="Hiking landscape">
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bohdan Dyshlevyy</p>
+    </footer>
+
+</body>
+</html>

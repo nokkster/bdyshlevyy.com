@@ -1,184 +1,256 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <title>Mon Parcours</title>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parcours | Bohdan Dyshlevyy</title>
+    <meta name="description"
+        content="Parcours personnel, académique et professionnel de Bohdan Dyshlevyy, de l'apprentissage du français au BUT Réseaux & Télécommunications puis au cycle ingénieur à EURECOM.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="parcours.css" />
-    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/parcours.css">
+
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-
     <header>
         <nav>
+            <a href="index.html" class="logo">BD.</a>
+
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="parcours.html" class="active">Parcours</a></li>
                 <li><a href="passions.html">Passions</a></li>
             </ul>
+
+            <a href="parcours-en.html" class="language-switch">EN</a>
         </nav>
     </header>
 
+    <main>
+        <section class="parcours-hero">
+            <p class="section-label">Parcours</p>
+            <h1>Mon <span>parcours</span></h1>
+            <p class="parcours-intro">
+                De l'apprentissage du français à mes études en réseaux et cybersécurité,
+                jusqu'à mon entrée en cycle ingénieur à EURECOM.
+            </p>
+        </section>
 
-    <div class="head">
+        <section class="timeline">
 
-        <p>Mon <strong>Parcours</strong></p>
-    </div>
-
-    <div class="container">
-        <section id="Container"></section>
-        <div class="info">
-            <div class="info-item">
-                <img src="kid.jpg" alt="Kid" class="gym">
-                <div class="info-text">
-                    <div class="titre">
-                        <p><strong>Comment j'ai découvert la langue française</strong></p>
-                    </div>
-
-                    <p>Depuis 2011, chaque été, ma famille voyage en France et j'apprécie vraiment ce pays, sa langue et
-                        sa culture. Pour mieux comprendre la culture française, j'ai commencé à prendre des cours
-                        particuliers de français en sixième. J'ai également participé à un camp de la langue française
-                        en Ukraine. En été 2017 et 2018 j'ai étudié le français à l'école linguistique du Centre
-                        National de Antibes.</p>
-
+            <article class="timeline-item">
+                <div class="timeline-marker">
+                    <span>2011</span>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <section id="Container"></section>
-        <div class="info">
-            <div class="info-item">
-                <img src="moirs.jpg" alt="Moi" class="music">
-                <div class="info-text">
-                    <div class="titre">
-                        <p><strong>Mes réussites</strong></p>
+                <div class="timeline-card">
+                    <img src="images/kid.jpg" alt="Découverte de la langue française">
+
+                    <div class="timeline-content">
+                        <p class="timeline-date">À partir de 2011</p>
+                        <h2>Découverte de la langue française</h2>
+
+                        <p>
+                            À partir de 2011, ma famille voyageait régulièrement en France pendant l'été.
+                            Ces séjours m'ont donné envie de mieux comprendre la langue et la culture françaises.
+                        </p>
+
+                        <p>
+                            J'ai commencé à prendre des cours particuliers de français au collège et j'ai
+                            également participé à un camp de langue française en Ukraine. Durant les étés 2017
+                            et 2018, j'ai suivi des cours de français dans une école de langues à Antibes.
+                        </p>
                     </div>
-                    <p>Ma persistance a donné de tels résultats :</p>
-                    <p>- 2022 Premières places dans les olympiades de français dans ma ville (Zolotonosha) et dans ma
-                        region (Tcherkassy).
-                        <a href="https://zologym.co.ua/vitaiemo-peremozhtsiv-oblasnykh-olimpia/" target="_blank">Lien de
-                            l'annonce</a>
-                    </p>
-                    <p>- 2022 <a href="DELF_B2.pdf" target="_blank">DELF B2</a></p>
-                    <p>- 2023 Premières places dans les olympiades de français dans ma ville (Zolotonosha) et dans ma
-                        region (Tcherkassy).
-                        <a href="https://zologym.co.ua/z-himnaziynymy-peremohamy-vpevneno-u-peremozhnyy-2023-rik/"
-                            target="_blank">Lien de l'annonce</a>
-                    </p>
-
                 </div>
-            </div>
-        </div>
-    </div>
+            </article>
 
-    <div class="container">
-        <section id="Container"></section>
-        <div class="info">
-            <div class="info-item">
-                <img src="moifr.jpg" alt="Moi" class="ski">
-                <div class="info-text">
-                    <div class="titre">
-                        <p><strong>Ma vie en France</strong></p>
+            <article class="timeline-item">
+                <div class="timeline-marker">
+                    <span>2022</span>
+                </div>
+
+                <div class="timeline-card">
+                    <img src="images/moirs.jpg" alt="Réussites en langue française">
+
+                    <div class="timeline-content">
+                        <p class="timeline-date">2022 - 2023</p>
+                        <h2>Réussites en français</h2>
+
+                        <p>
+                            Mon apprentissage du français m'a permis d'obtenir plusieurs résultats académiques
+                            et de valider officiellement mon niveau.
+                        </p>
+
+                        <div class="achievement-list">
+                            <div class="achievement">
+                                <strong>2022</strong>
+                                <span>
+                                    Premières places aux olympiades de français dans ma ville de Zolotonosha
+                                    et dans la région de Tcherkassy.
+                                </span>
+                                <a href="https://zologym.co.ua/vitaiemo-peremozhtsiv-oblasnykh-olimpia/"
+                                    target="_blank" rel="noopener noreferrer">Voir l'annonce</a>
+                            </div>
+
+                            <div class="achievement">
+                                <strong>Juin 2022</strong>
+                                <span>Obtention du DELF B2.</span>
+                                <a href="documents/DELF_B2.pdf" target="_blank">Voir le diplôme</a>
+                            </div>
+
+                            <div class="achievement">
+                                <strong>2023</strong>
+                                <span>
+                                    Premières places aux olympiades de français dans ma ville et dans ma région.
+                                </span>
+                                <a href="https://zologym.co.ua/z-himnaziynymy-peremohamy-vpevneno-u-peremozhnyy-2023-rik/"
+                                    target="_blank" rel="noopener noreferrer">Voir l'annonce</a>
+                            </div>
+
+                            <div class="achievement">
+                                <strong>Juillet 2026</strong>
+                                <span>Score de 975/990 au TOEIC.</span>
+                                <a href="documents/TOEIC_DYSHLEVYY.pdf" target="_blank">Voir le diplôme</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>Lorsque la guerre a éclaté en Ukraine, nous avons demandé de l'aide à l'un de nos amis francais,
-                        et il nous a gentiment prêté son appartement. J'ai également commencé à fréquenter un collège
-                        français (en troisieme) puis un lycée (en seconde). Ensuite, en 2023 j'ai envoyé des dossiers de
-                        candidature à trois universités et toutes ont été acceptées. Mais en ayant le rêve d'apprendre
-                        la cybersécurité, j'ai visité l'IUT Sophia Antipolis lors de la journée portes ouvertes où j'ai
-                        communiqué avec l'administration. La réponse positive de l'IUT m'a permis d'être étudiant en
-                        Réseaux et Télécommunications.</p>
                 </div>
-            </div>
-        </div>
-    </div>
+            </article>
 
+            <article class="timeline-item">
+                <div class="timeline-marker">
+                    <span>2022</span>
+                </div>
 
+                <div class="timeline-card">
+                    <img src="images/moifr.jpg" alt="Installation et études en France">
 
-    <div class="container">
-        <section id="Container"></section>
-        <div class="info">
-            <div class="info-item">
-                <img src="univ.jpg" alt="IUT Nice Côte d'Azur" class="ski">
-                <div class="info-text">
-                    <div class="titre">
-                        <p><strong>Mon parcours à l'IUT et mon projet d'avenir</strong></p>
+                    <div class="timeline-content">
+                        <p class="timeline-date">À partir de 2022</p>
+                        <h2>Ma vie et mes études en France</h2>
+
+                        <p>
+                            Lorsque la guerre a commencé en Ukraine, ma famille est venue en France.
+                            J'ai poursuivi ma scolarité dans le système français, d'abord au collège en troisième,
+                            puis au lycée.
+                        </p>
+
+                        <p>
+                            En 2023, au moment de choisir mes études supérieures, je souhaitais m'orienter vers
+                            l'informatique et la cybersécurité. Après avoir découvert l'IUT Nice Côte d'Azur à
+                            Sophia Antipolis lors d'une journée portes ouvertes, j'ai choisi le BUT Réseaux
+                            &amp; Télécommunications.
+                        </p>
                     </div>
-
-                    <p>
-                        Depuis mon arrivée à l'IUT Nice Côte d'Azur, site de Sophia Antipolis, en 2023, je me suis
-                        spécialisé dans les Réseaux et Télécommunications. J'y ai développé des compétences solides en
-                        administration réseau, systèmes, cybersécurité, virtualisation, supervision et automatisation.
-                    </p>
-
-                    <p>
-                        En 2025, j'ai effectué un stage au Centre Inria d'Université Côte d'Azur, dans l'équipe-projet
-                        DIANA. Ce stage m'a permis de travailler sur l'automatisation de configurations réseau
-                        expérimentales, notamment autour de SLICES-RI, FABRIC, VLAN, Ansible, FastAPI et Docker.
-                    </p>
-
-                    <p>
-                        Depuis septembre 2025, je poursuis mon parcours en alternance chez Inria, où je travaille sur
-                        des sujets liés au DevOps, aux infrastructures expérimentales, à Kubernetes, Docker, JupyterHub,
-                        Keycloak et à l'automatisation de services.
-                    </p>
-
-                    <p>
-                        Pour la rentrée 2026, j'ai été admis en cycle ingénieur Informatique et Réseaux, parcours
-                        Systèmes et Réseaux, à IMT Mines Alès. Je recherche actuellement une alternance de 3 ans afin de
-                        poursuivre ma formation d'ingénieur et continuer à progresser dans les domaines des réseaux,
-                        systèmes, cybersécurité et DevOps.
-                    </p>
                 </div>
-            </div>
-        </div>
-    </div>
+            </article>
 
-    <div class="container">
-        <section id="Container"></section>
-        <div class="info">
-            <div class="info-item">
-                <img src="mines-ales.png" alt="IMT Mines Alès" class="ski">
-                <div class="info-text">
-                    <div class="titre">
-                        <p><strong>Admission à IMT Mines Alès</strong></p>
+            <article class="timeline-item">
+                <div class="timeline-marker">
+                    <span>2023</span>
+                </div>
+
+                <div class="timeline-card">
+                    <img src="images/univ.jpg" alt="IUT Nice Côte d'Azur">
+
+                    <div class="timeline-content">
+                        <p class="timeline-date">2023 - 2026</p>
+                        <h2>BUT Réseaux &amp; Télécommunications</h2>
+
+                        <p>
+                            De 2023 à 2026, j'ai suivi un Bachelor Universitaire de Technologie
+                            Réseaux &amp; Télécommunications à l'IUT Nice Côte d'Azur, sur le site
+                            de Sophia Antipolis.
+                        </p>
+
+                        <p>
+                            Pendant ces trois années, j'ai développé des compétences en réseaux,
+                            systèmes, cybersécurité, virtualisation, supervision, automatisation
+                            et DevOps.
+                        </p>
+
+                        <p>
+                            En deuxième année, j'ai effectué un stage de 11 semaines au Centre Inria
+                            d'Université Côte d'Azur, au sein de l'équipe-projet DIANA. J'y ai travaillé
+                            sur SLICES-RI, notamment autour de tests réseau sur FABRIC, de GitLab CI/CD
+                            et de l'automatisation de configurations VLAN.
+                        </p>
+
+                        <p>
+                            En troisième année, j'ai poursuivi chez Inria en alternance. J'ai travaillé
+                            sur l'automatisation de la gestion des ressources expérimentales de SLICES-RI
+                            avec POS et MRS, ainsi que sur l'évaluation des performances d'un GPU
+                            NVIDIA H100 NVL.
+                        </p>
+
+                        <p>
+                            J'ai terminé mon BUT en 2026 avec une base technique solide et une orientation
+                            confirmée vers les réseaux, les systèmes, la cybersécurité et le DevOps.
+                        </p>
+
+                        <a class="timeline-link" href="portfolio.html">Voir mes projets</a>
                     </div>
-
-                    <p>
-                        Après mon BUT Réseaux et Télécommunications, j'ai été admis à IMT Mines Alès en cycle ingénieur
-                        Informatique et Réseaux, parcours Systèmes et Réseaux, pour la rentrée 2026.
-                    </p>
-
-                    <p>
-                        Cette formation représente la suite logique de mon parcours, car elle me permettra d'approfondir
-                        mes compétences en architecture réseau, systèmes, cybersécurité, cloud, automatisation et
-                        DevOps.
-                    </p>
-
-                    <p>
-                        Dans ce cadre, je recherche une alternance de 3 ans à partir de septembre 2026, idéalement dans
-                        les domaines des réseaux, systèmes, DevOps, cybersécurité ou infrastructure cloud.
-                    </p>
                 </div>
-            </div>
-        </div>
-    </div>
+            </article>
 
+            <article class="timeline-item current">
+                <div class="timeline-marker">
+                    <span>2026</span>
+                </div>
 
+                <div class="timeline-card">
+                    <img src="images/eurecom.png" alt="EURECOM">
 
+                    <div class="timeline-content">
+                        <p class="timeline-date">Depuis septembre 2026</p>
+                        <h2>Cycle ingénieur à EURECOM</h2>
+
+                        <p>
+                            Depuis la rentrée 2026, je poursuis mes études à EURECOM, où je suis
+                            actuellement en première année du cycle ingénieur.
+                        </p>
+
+                        <p>
+                            Cette formation me permet d'approfondir mes connaissances en informatique,
+                            réseaux, systèmes, cybersécurité et technologies numériques, tout en renforçant
+                            les bases théoriques acquises après trois années de BUT très orientées vers
+                            la pratique.
+                        </p>
+
+                        <p>
+                            Mon objectif est de continuer à développer mes compétences techniques à travers
+                            des projets et de nouvelles expériences en entreprise.
+                        </p>
+
+                        <div class="internship-callout">
+                            <span>Actuellement</span>
+                            <p>
+                                Je recherche un <strong>stage d'une durée minimale de 4 semaines</strong>,
+                                idéalement dans les domaines des réseaux, systèmes, cybersécurité,
+                                DevOps ou infrastructures cloud.
+                            </p>
+                        </div>
+
+                        <a class="timeline-link" href="index.html#contact">Me contacter</a>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Dyshlevyy Bohdan </p>
+        <p>&copy; 2026 Bohdan Dyshlevyy</p>
     </footer>
 
 </body>
-
 </html>

@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Portfolio | Bohdan Dyshlevyy
+    </title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;display=swap" rel="stylesheet" />
+    <meta
+        content="Projects, professional experience and technical skills of Bohdan Dyshlevyy in networking, systems, cybersecurity, DevOps, automation and infrastructure."
+        name="description" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/portfolio.css" rel="stylesheet" />
+    <script defer="" src="js/portfolioscr.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index-en.html">
+                BD.
+            </a>
+            <ul>
+                <li>
+                    <a href="index-en.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="portfolio-en.html">
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="parcours-en.html">
+                        Background
+                    </a>
+                </li>
+                <li>
+                    <a href="passions-en.html">
+                        Interests
+                    </a>
+                </li>
+            </ul>
+            <a class="language-switch" href="portfolio.html">
+                FR
+            </a>
+        </nav>
+    </header>
+    <section class="portfolio-hero">
+        <p class="section-label">
+            Portfolio
+        </p>
+        <h1>
+            My
+            <span>
+                projects &amp; skills
+            </span>
+        </h1>
+        <p class="portfolio-intro">
+            Explore my professional experience, the projects I completed during my Bachelor's degree
+            in Networking &amp; Telecommunications, and the technical skills I developed in networking,
+            systems, cybersecurity and DevOps.
+        </p>
+    </section>
+    <div class="container">
+        <h4 class="category-title">
+            Professional Experience
+        </h4>
+        <ul class="info">
+            <li class="info-item">
+                <img alt="Inria internship" src="images/inria.png" />
+                <h3>
+                    DevOps &amp; Network Automation Internship - Inria
+                </h3>
+                <div class="popup" id="popup-16">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            DevOps &amp; Network Automation Internship - Inria
+                        </h4>
+                        <p>
+                            From April to June 2025, I completed an 11-week internship at the Inria Centre at Université
+                            Côte d'Azur within the DIANA research team. My work was carried out in the context of
+                            SLICES-RI, a European research infrastructure dedicated to experimentation in networking and
+                            distributed systems.
+                        </p>
+                        <p>
+                            The first part of my internship involved experimenting with the FABRIC testbed. I created
+                            network environments across several sites and performed connectivity and performance tests
+                            using tools such as iperf. I then automated the regular execution of these tests using a
+                            GitLab CI/CD pipeline and a dedicated runner.
+                        </p>
+                        <p>
+                            The main assignment of my internship focused on developing a network configuration
+                            automation tool. Starting from a topology described in a DOT file, the tool analyses
+                            connections between devices and automatically generates the required VLAN configurations.
+                        </p>
+                        <p>
+                            I used Python and NetworkX to represent and analyse network topologies, then developed
+                            configuration generation for different types of network equipment. I also explored
+                            deployment automation with Ansible to reduce manual intervention and configuration errors.
+                        </p>
+                        <p>
+                            This internship allowed me to apply my networking skills while discovering DevOps practices
+                            for research infrastructures, including automation, CI/CD, reproducible testing and
+                            configuration management.
+                        </p>
+                        <a href="documents/Stage Presentation DYSHLEVYY.pdf" target="_blank">
+                            Internship presentation
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-16">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Inria apprenticeship" src="images/inria.png" />
+                <h3>
+                    DevOps &amp; Research Infrastructure Apprenticeship - Inria
+                </h3>
+                <div class="popup" id="popup-17">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            DevOps &amp; Research Infrastructure Apprenticeship - Inria
+                        </h4>
+                        <p>
+                            From September 2025 to September 2026, I completed the third year of my Bachelor's degree in
+                            Networking &amp; Telecommunications as an apprentice at the Inria Centre at Université Côte
+                            d'Azur within the DIANA research team. I worked mainly on the European SLICES-RI research
+                            infrastructure.
+                        </p>
+                        <p>
+                            The first part of my work focused on automating the management and description of
+                            experimental resources. I worked with POS and MRS to reserve machines, automate their
+                            preparation and collect hardware information such as processors, memory, storage and network
+                            interfaces.
+                        </p>
+                        <p>
+                            I developed and improved scripts that automatically transformed this information into
+                            structured descriptions usable by SLICES-RI. The goal was to make the resource inventory
+                            more reliable and simplify integration into the infrastructure.
+                        </p>
+                        <p>
+                            I also contributed to a performance study of an NVIDIA H100 NVL GPU. I set up several
+                            benchmarks to evaluate its performance, including experiments with MIG technology and
+                            language models such as Mistral-7B. This work included test automation, result collection
+                            and analysis.
+                        </p>
+                        <p>
+                            <strong>Scientific publications and research contributions</strong>
+                        </p>
+
+                        <p>
+                            My work on resource discovery and metadata management within SLICES-RI
+                            contributed to the scientific paper
+                            <em>“A Data Management Infrastructure for Reproducible Experimental Research”</em>,
+                            of which I am a co-author. The paper was published as part of the
+                            29th edition of the ICIN conference in 2026.
+                        </p>
+
+                        <a href="https://doi.org/10.1109/ICIN69025.2026.11481800" target="_blank"
+                            rel="noopener noreferrer">
+                            View the ICIN 2026 publication
+                        </a>
+
+                        <p>
+                            The experiments conducted on the NVIDIA H100 GPU also formed the basis of
+                            a second scientific paper,
+                            <em>“Characterizing the Impact of GPU Frequency and Numerical Precision on NVIDIA MIG
+                                Performance”</em>.
+                            I contributed to the benchmark pipeline, experimental campaigns, result
+                            collection and analysis, as well as to the preparation of the manuscript.
+                            The paper is currently in preparation.
+                        </p>
+                        <p>
+                            This apprenticeship strengthened my skills in Linux, Python, automation,
+                            distributed infrastructures, system administration and DevOps, while also
+                            giving me practical experience with experimental research and scientific
+                            publication.
+                        </p>
+                        <a href="documents/Alternance Presentation DYSHLEVYY.pdf" target="_blank">
+                            Apprenticeship presentation
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-17">
+                    View More
+                </button>
+            </li>
+        </ul>
+        <h4 class="category-title">
+            Networking &amp; Cybersecurity
+        </h4>
+        <ul class="info">
+            <li class="info-item">
+                <img alt="VirtualBox and Wireshark" src="images/vm.jpg" />
+                <h3>
+                    Using VirtualBox and Wireshark
+                </h3>
+                <div class="popup" id="popup-1">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Using VirtualBox and Wireshark
+                        </h4>
+                        <p>
+                            During my studies at the IUT in Sophia Antipolis, we used VirtualBox and Wireshark in
+                            practical classes and projects to deepen our understanding of computer networks.
+                        </p>
+                        <p>
+                            I learned how to work with virtual machines, analyse Wireshark packet captures and
+                            understand the behaviour of different protocol layers.
+                        </p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-1">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Home network" src="images/reseau.jpeg" />
+                <h3>
+                    Home Network Analysis
+                </h3>
+                <div class="popup" id="popup-2">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Home Network Analysis
+                        </h4>
+                        <p>
+                            I completed a project in which I studied my home network and its energy impact. I also
+                            learned to use Windows commands and Internet tools to identify the IP and MAC addresses of
+                            local and remote devices.
+                        </p>
+                        <p>
+                            The following documents are from SAÉ 12, an introductory computer networking project:
+                        </p>
+                        <a href="documents/SAE12_Sujet.pdf" target="_blank">
+                            SAÉ 12 project brief
+                        </a>
+                        <a href="documents/Compte_rendu_1_ SAÉ_12.pdf" target="_blank">
+                            SAÉ 12 report, Part 1
+                        </a>
+                        <a href="documents/Comptre_Rendu_2_ SAÉ_12.pdf" target="_blank">
+                            SAÉ 12 report, Part 2
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-2">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Cisco network project" src="images/cisco.jpg" />
+                <h3>
+                    Designing a Virtual Network
+                </h3>
+                <div class="popup" id="popup-3">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Designing a Virtual Network
+                        </h4>
+                        <p>
+                            As Networking &amp; Telecommunications students, my teammate and I were asked to design and
+                            deploy the network of a small company. Using Cisco Packet Tracer, we addressed switching,
+                            routing, basic network services and security requirements to build a functional and
+                            structured network.
+                        </p>
+                        <p>
+                            The following files are from SAÉ 21, which focused on designing and implementing a
+                            small-business network:
+                        </p>
+                        <a href="documents/SAE21.pdf" target="_blank">
+                            SAÉ 21 project brief
+                        </a>
+                        <a href="documents/SAE21_DYSHLEVYY_TIBERDANI.pdf" target="_blank">
+                            SAÉ 21 report
+                        </a>
+                        <a href="documents/SAE21_DYSHLEVYY_TIBERDANI.pkt" target="_blank">
+                            Packet Tracer project file
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-3">
+                    View More
+                </button>
+            </li>
+        </ul>
+        <ul class="info">
+            <li class="info-item">
+                <img alt="Cisco certifications" src="images/ccna.jpg" />
+                <h3>
+                    Cisco CCNA 1, 2 and 3 Certifications
+                </h3>
+                <div class="popup" id="popup-12">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Cisco CCNA 1, 2 and 3 Certifications
+                        </h4>
+                        <p>
+                            I completed the Cisco CCNA 1, CCNA 2 and CCNA 3 courses as part of my Networking &amp;
+                            Telecommunications degree.
+                        </p>
+                        <p>
+                            They strengthened my skills in IPv4/IPv6 addressing, switching, routing, VLANs, inter-VLAN
+                            routing, network redundancy, device security, routing protocols and troubleshooting.
+                        </p>
+                        <p>
+                            They provide me with a solid foundation for understanding, configuring and analysing
+                            professional network infrastructures.
+                        </p>
+                        <p>
+                            Certificates:
+                        </p>
+                        <a href="documents/CCNA1_DYSHLEVYY.pdf" target="_blank">
+                            CCNA 1 certificate
+                        </a>
+                        <a href="documents/CCNA2_DYSHLEVYY.pdf" target="_blank">
+                            CCNA 2 certificate
+                        </a>
+                        <a href="documents/CCNA3_DYSHLEVYY.pdf" target="_blank">
+                            CCNA 3 certificate
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-12">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Penetration testing" src="images/pentesting.png" />
+                <h3>
+                    Penetration Testing Techniques
+                </h3>
+                <div class="popup" id="popup-9">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Penetration Testing Techniques
+                        </h4>
+                        <p>
+                            During a penetration testing lab, I analysed and exploited security weaknesses in a
+                            simulated environment.
+                        </p>
+                        <p>
+                            Some of the vulnerabilities identified included:
+                        </p>
+                        <p>
+                            •
+                            <strong>
+                                Outdated software:
+                            </strong>
+                            an obsolete Samba service version allowed unauthorised access through a known vulnerability.
+                        </p>
+                        <p>
+                            •
+                            <strong>
+                                Lack of monitoring:
+                            </strong>
+                            outbound connections were not monitored, making remote control easier.
+                        </p>
+                        <p>
+                            •
+                            <strong>
+                                Misconfigurations:
+                            </strong>
+                            insecure scheduled tasks made it possible to maintain persistent access.
+                        </p>
+                        <p>
+                            •
+                            <strong>
+                                Lack of segmentation:
+                            </strong>
+                            other systems on the network could be reached from a compromised machine.
+                        </p>
+                        <p>
+                            This project allowed me to apply system analysis techniques, better understand security
+                            risks and propose appropriate remediation measures.
+                        </p>
+                        <a href="documents/ANNEXE_DYSHLEVYY_PENTEST.pdf" target="_blank">
+                            Penetration testing appendix
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-9">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="SAE33" src="images/sae33.png" />
+                <h3>
+                    Designing a Secure Multi-Site Network
+                </h3>
+                <div class="popup" id="popup-10">
+                    <div class="overlay">
+                    </div>
+                    <div class="content" style="line-height: 1.8;">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Designing a Secure Multi-Site Network
+                        </h4>
+                        <p>
+                            In this project, carried out on physical networking equipment, we designed and secured a
+                            local network. The work included:
+                            <br />
+                            •
+                            <strong>
+                                HSRP
+                            </strong>
+                            and
+                            <strong>
+                                STP (RSTP)
+                            </strong>
+                            for redundancy and resilience.
+                            <br />
+                            • Securing the LAN using
+                            <strong>
+                                VLANs
+                            </strong>
+                            and
+                            <strong>
+                                ACLs
+                            </strong>
+                            .
+                            <br />
+                            • Deploying an ASA firewall with
+                            <strong>
+                                inside
+                            </strong>
+                            ,
+                            <strong>
+                                outside
+                            </strong>
+                            and
+                            <strong>
+                                DMZ
+                            </strong>
+                            zones.
+                            <br />
+                            • Establishing secure connectivity between departments using an
+                            <strong>
+                                IPsec VPN
+                            </strong>
+                            configured on the ASA.
+                        </p>
+                        <p>
+                            We tested and validated the solution to ensure strong network security and availability.
+                        </p>
+                        <p>
+                            The ZIP archive below contains the project configurations and associated documents:
+                        </p>
+                        <a href="https://drive.google.com/file/d/1jweL8uFpgovuFe_ahWcIkqkxbrcTmB0M/view?usp=sharing"
+                            rel="noopener noreferrer" target="_blank">
+                            Project ZIP archive
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-10">
+                    View More
+                </button>
+            </li>
+        </ul>
+        <ul class="info">
+            <li class="info-item">
+                <img alt="Stormshield CSNA" src="images/stormshield.png" />
+                <h3>
+                    Stormshield CSNA Certification
+                </h3>
+                <div class="popup" id="popup-13">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Stormshield CSNA Certification
+                        </h4>
+                        <p>
+                            I obtained the Stormshield CSNA certification, which introduced me to the administration and
+                            security of Stormshield firewalls.
+                        </p>
+                        <p>
+                            The certification covers network filtering, security rules, network address translation,
+                            VPNs, logs and firewall configuration best practices.
+                        </p>
+                        <p>
+                            It complements my skills in network cybersecurity and infrastructure protection.
+                        </p>
+                        <a href="documents/CSNA_DYSHLEVYY.pdf" target="_blank">
+                            View CSNA certificate
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-13">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Cyber Watch" src="images/cyberwatch.png" />
+                <h3>
+                    Cybersecurity Audit Platform: Cyber Watch
+                </h3>
+                <div class="popup" id="popup-15">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Cybersecurity Audit Platform: Cyber Watch
+                        </h4>
+                        <p>
+                            As part of the SAÉ 4.1 Cybersecurity project, we designed Cyber Watch, a web platform
+                            intended to automate a cybersecurity audit and generate a clear report for the client.
+                        </p>
+                        <p>
+                            The project involved defining an attack surface, selecting several penetration-testing
+                            tools, organising their execution sequence and designing a scoring system to evaluate the
+                            results.
+                        </p>
+                        <p>
+                            The platform included passive reconnaissance, active-host discovery, port scanning,
+                            web-technology detection, vulnerability analysis, SQL injection testing and audit-report
+                            generation.
+                        </p>
+                        <p>
+                            This project helped me better understand the workflow of a web security audit, the
+                            automation of penetration-testing tools and the presentation of technical results in an
+                            actionable format.
+                        </p>
+                        <a href="documents/ScanSafe.pdf" target="_blank">
+                            Project presentation
+                        </a>
+                        <a href="documents/Annexe.pdf" target="_blank">
+                            Technical appendix
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-15">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="GitOps ArgoCD Kubernetes" src="images/argocd.png" />
+                <h3>
+                    GitOps with ArgoCD on Kubernetes
+                </h3>
+                <div class="popup" id="popup-27">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            GitOps with ArgoCD on Kubernetes
+                        </h4>
+                        <p>
+                            In this research project, I explored the Kubernetes and GitOps ecosystem using ArgoCD.
+                        </p>
+                        <p>
+                            The goal was to understand how Git can act as the source of truth for automatically
+                            deploying applications to a Kubernetes cluster.
+                        </p>
+                        <p>
+                            I built an architecture using GitHub, GitHub Actions, ArgoCD and Kubernetes. Kubernetes
+                            manifests were stored in a Git repository, validated by a CI pipeline and then automatically
+                            synchronised by ArgoCD.
+                        </p>
+                        <p>
+                            The demonstration involved deploying an Nginx application and then changing the number of
+                            replicas directly from Git to illustrate the GitOps workflow.
+                        </p>
+                        <p>
+                            This project improved my understanding of Kubernetes, continuous deployment, the difference
+                            between CI and CD, change traceability and rollback through GitOps.
+                        </p>
+                        <a href="documents/DYSHLEVYY_BOHDAN_PROJET.pptx" target="_blank">
+                            Project presentation
+                        </a>
+                        <a href="https://github.com/nokkster/gitops-argocd-demo" rel="noopener noreferrer"
+                            target="_blank">
+                            GitHub repository
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-27">
+                    View More
+                </button>
+            </li>
+        </ul>
+        <h4 class="category-title">
+            Software &amp; Infrastructure
+        </h4>
+        <ul class="info">
+            <li class="info-item">
+                <img alt="Thales" src="images/thales.png" />
+                <h3>
+                    Dynamic Website Development
+                </h3>
+                <div class="popup" id="popup-8">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Dynamic Website Development
+                        </h4>
+                        <p>
+                            As part of a collaborative project with Thales, our group developed a dynamic website using
+                            PHP. The objective was to display and modify data stored in an SQL database. Using PHP, we
+                            created an interactive user interface that simplified data management. This project
+                            strengthened our skills in web development, database management and teamwork.
+                        </p>
+                        <img alt="Website screenshot 1" src="images/site1.png" />
+                        <img alt="Website screenshot 2" src="images/site2.png" />
+                    </div>
+                </div>
+                <button id="show-popup-btn-8">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Application Android " src="images/android.webp" />
+                <h3>
+                    Android Application Development
+                </h3>
+                <div class="popup" id="popup-11">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Android Application Development
+                        </h4>
+                        <p>
+                            Our goal was to build a
+                            <strong>
+                                Tic-Tac-Toe
+                            </strong>
+                            game allowing users to:
+                        </p>
+                        <p>
+                            • Play in manual mode with two human players through an intuitive Android interface.
+                            <br />
+                            • Store player statistics such as wins, losses and draws in a database.
+                            <br />
+                            • View these statistics through the Android application or a dedicated web server.
+                            <br />
+                            • Manage client-server interactions to synchronise data in real time.
+                        </p>
+                        <p>
+                            This project strengthened our skills in Java, Android user-interface development and
+                            database management connected to a server.
+                        </p>
+                        <p>
+                            Below is a screenshot of the project interface:
+                        </p>
+                        <img alt="Tic-Tac-Toe application screenshot" src="images/sae32.png" />
+                    </div>
+                </div>
+                <button id="show-popup-btn-11">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="MetalOps" src="images/metalops.png" />
+                <h3>
+                    Continuous Deployment with Proxmox, Terraform and Ansible
+                </h3>
+                <div class="popup" id="popup-18">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Continuous Deployment with Proxmox, Terraform and Ansible
+                        </h4>
+                        <p>
+                            In this project, we built a DevOps solution to automate the deployment of an infrastructure
+                            composed of a load balancer and two web servers.
+                        </p>
+                        <p>
+                            The scenario involved a company experiencing delivery delays because deployments were
+                            performed manually by the operations team. The objective was to replace these practices with
+                            a reproducible, reliable and automated solution.
+                        </p>
+                        <p>
+                            We used Proxmox for virtualisation, Terraform to automatically provision virtual machines,
+                            Ansible to configure services and Nginx to provide load balancing.
+                        </p>
+                        <p>
+                            This project strengthened my skills in Infrastructure as Code, automation, virtualisation,
+                            system administration, networking and DevOps practices.
+                        </p>
+                        <a href="documents/SAE_RAPPTECH_DYSHLEVYY_RETIERE_HERBRECHT-BOURGOIN.pdf" target="_blank">
+                            Technical report
+                        </a>
+                        <a href="documents/SAE_SOUTENANCE_DYSHLEVYY_RETIERE_HERBRECHT-BOURGOIN.pdf" target="_blank">
+                            Project presentation
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-18">
+                    View More
+                </button>
+            </li>
+        </ul>
+        <ul class="info">
+            <li class="info-item">
+                <img alt="TechNova" src="images/technova.png" />
+                <h3>
+                    TechNova Project: Securing an Information System
+                </h3>
+                <div class="popup" id="popup-19">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            TechNova Project: Securing an Information System
+                        </h4>
+                        <p>
+                            In this group project, we had to propose a complete solution to modernise and secure the
+                            information system of the fictional company TechNova Industries.
+                        </p>
+                        <p>
+                            The scenario involved a fast-growing international SME with sites in Europe, Morocco and the
+                            United States, whose IT infrastructure presented significant weaknesses.
+                        </p>
+                        <p>
+                            We worked on network architecture, VLAN segmentation, cybersecurity, Active Directory,
+                            physical security, telephony, cabling, endpoint management, monitoring and compliance.
+                        </p>
+                        <p>
+                            A proof-of-concept day allowed us to demonstrate part of the proposed solution and show how
+                            it could address the company's security, reliability and scalability requirements.
+                        </p>
+                        <p>
+                            This project gave me a broader view of an enterprise information system and helped me better
+                            understand the technical decisions required to secure an infrastructure.
+                        </p>
+                        <a href="documents/TechNova sujet.pdf" target="_blank">
+                            Project brief
+                        </a>
+                        <a href="documents/TechNova_Solution.pdf" target="_blank">
+                            Project presentation
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-19">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Incident response" src="images/incident-response.png" />
+                <h3>
+                    Incident Response &amp; Business Continuity
+                </h3>
+                <div class="popup" id="popup-26">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Incident Response &amp; Business Continuity
+                        </h4>
+                        <p>
+                            In this cybersecurity project, we studied a major ransomware attack inspired by the incident
+                            affecting the Centre Hospitalier Sud-Francilien.
+                        </p>
+                        <p>
+                            The work involved analysing the attack chain, identifying compromised systems, proposing
+                            urgent actions for the first 72 hours and building a business continuity plan to maintain
+                            essential services.
+                        </p>
+                        <p>
+                            I focused particularly on forensic analysis, incident timeline reconstruction, indicators of
+                            compromise, MITRE ATT&amp;CK techniques and remediation recommendations.
+                        </p>
+                        <p>
+                            This project helped me better understand cyber crisis management, communication with
+                            management, regulatory obligations such as CNIL notification, and the reconstruction of an
+                            information system after an attack.
+                        </p>
+                        <a href="documents/Fiche_Sujet_SAE.docx.pdf" target="_blank">
+                            Project brief
+                        </a>
+                        <a href="documents/presentation_CHRCE 1.pdf" target="_blank">
+                            Project presentation
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-26">
+                    View More
+                </button>
+            </li>
+        </ul>
+        <h4 class="category-title">
+            Technical Skills
+        </h4>
+        <ul class="info">
+            <li class="info-item">
+                <img alt="DevOps" src="images/devops.png" />
+                <h3>
+                    DevOps, CI/CD and GitOps
+                </h3>
+                <div class="popup" id="popup-20">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            DevOps, CI/CD and GitOps
+                        </h4>
+                        <p>
+                            I have worked on projects using DevOps practices to automate deployments, improve service
+                            reliability and reduce manual operations.
+                        </p>
+                        <p>
+                            I used GitLab CI/CD to automate pipelines, manage protected variables and run deployment or
+                            testing scripts.
+                        </p>
+                        <p>
+                            I also worked with GitOps using Kubernetes and ArgoCD, where the desired infrastructure
+                            state is managed from a Git repository.
+                        </p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-20">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Docker Kubernetes" src="images/kubernetes.png" />
+                <h3>
+                    Docker, Kubernetes and Containerisation
+                </h3>
+                <div class="popup" id="popup-21">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Docker, Kubernetes and Containerisation
+                        </h4>
+                        <p>
+                            I used Docker to create reproducible environments, isolate applications and simplify
+                            deployment.
+                        </p>
+                        <p>
+                            I also worked with Kubernetes to deploy applications, manage services and namespaces, and
+                            understand how cloud-native architectures operate.
+                        </p>
+                        <p>
+                            These skills give me a better understanding of modern application deployment and container
+                            orchestration.
+                        </p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-21">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Infrastructure as Code" src="images/iac.png" />
+                <h3>
+                    Proxmox, Terraform and Ansible
+                </h3>
+                <div class="popup" id="popup-22">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Proxmox, Terraform and Ansible
+                        </h4>
+                        <p>
+                            I used Proxmox to create and manage virtual machines in a virtualisation environment.
+                        </p>
+                        <p>
+                            With Terraform, I automated infrastructure creation, including the provisioning of virtual
+                            machines from configuration files.
+                        </p>
+                        <p>
+                            With Ansible, I automated service configuration, package installation and application
+                            deployment across multiple machines.
+                        </p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-22">
+                    View More
+                </button>
+            </li>
+        </ul>
+        <ul class="info">
+            <li class="info-item">
+                <img alt="Supervision" src="images/supervision.png" />
+                <h3>
+                    System Monitoring with Centreon and SNMP
+                </h3>
+                <div class="popup" id="popup-23">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            System Monitoring with Centreon and SNMP
+                        </h4>
+                        <p>
+                            I worked on monitoring systems and network devices using Centreon and SNMP.
+                        </p>
+                        <p>
+                            These tools make it possible to monitor machines, services and network interfaces, detect
+                            incidents and quickly raise alerts when problems occur.
+                        </p>
+                        <p>
+                            This skill is important for maintaining the availability, maintenance and operational
+                            visibility of an IT infrastructure.
+                        </p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-23">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Active Directory" src="images/activedirectory.png" />
+                <h3>
+                    Active Directory &amp; Windows Server Administration
+                </h3>
+                <div class="popup" id="popup-24">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Active Directory &amp; Windows Server Administration
+                        </h4>
+                        <p>
+                            I worked on administering an Active Directory domain using Windows Server.
+                        </p>
+                        <p>
+                            I configured domain controllers, users, groups, organisational units, Group Policy Objects
+                            (GPOs) and DNS services.
+                        </p>
+                        <p>
+                            This experience gave me a better understanding of centralised account management, access
+                            rights and security policies in an enterprise environment.
+                        </p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-24">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Hardening Active Directory" src="images/hardenad.png" />
+                <h3>
+                    Active Directory Hardening with HardenAD
+                </h3>
+                <div class="popup" id="popup-25">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Active Directory Hardening with HardenAD
+                        </h4>
+                        <p>
+                            I studied different methods for strengthening the security of an Active Directory
+                            environment.
+                        </p>
+                        <p>
+                            I explored tools and best practices such as PingCastle, BloodHound, Purple Knight and
+                            HardenAD to analyse weaknesses, identify misconfigurations and apply hardening measures.
+                        </p>
+                        <p>
+                            The main objectives are to reduce privileged accounts, strengthen GPOs, separate
+                            administrative roles, limit lateral movement and improve the overall security of the domain.
+                        </p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-25">
+                    View More
+                </button>
+            </li>
+        </ul>
+        <h4 class="category-title">
+            Communication &amp; Languages
+        </h4>
+        <ul class="info">
+            <li class="info-item">
+                <img alt="Interview" src="images/interview.png" />
+                <h3>
+                    Professional Interview Project
+                </h3>
+                <div class="popup" id="popup-5">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Professional Interview Project
+                        </h4>
+                        <p>
+                            During my studies at the IUT in Sophia Antipolis, we completed several projects involving
+                            oral communication skills, including an interview with an IT professional.
+                        </p>
+                        <p>
+                            My teammate and I identified and contacted a professional, arranged a meeting, conducted the
+                            interview and then presented our findings to our instructors.
+                        </p>
+                        <p>
+                            This project helped us learn how to expand our professional network and conduct a structured
+                            interview.
+                        </p>
+                        <a href="documents/ALLANO-DYSHLEVYY_R111-diapo_NABEDRIK.pdf" target="_blank">
+                            Interview presentation
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-5">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="English" src="images/english.jpg" />
+                <h3>
+                    English
+                </h3>
+                <div class="popup" id="popup-6">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            English
+                        </h4>
+                        <p>
+                            During my studies, I learned to communicate and use technical English in an academic and
+                            professional context. I improved my written English and became more comfortable writing
+                            reports and discussing technology in English.
+                        </p>
+                        <p>
+                            Here is a report in which I used my English skills:
+                        </p>
+                        <a href="documents/Rapport Thalès-Thales01.pdf" target="_blank">
+                            Thales report
+                        </a>
+                        <p>
+                            Here is a video CV I created in English:
+                        </p>
+                        <iframe allow="autoplay" height="480"
+                            src="https://drive.google.com/file/d/1Yt9447BGHT-fLhQwA-blzzFdRK8pJj0g/preview" width="854">
+                        </iframe>
+                    </div>
+                </div>
+                <button id="show-popup-btn-6">
+                    View More
+                </button>
+            </li>
+            <li class="info-item">
+                <img alt="Languages" src="images/langues.jpg" />
+                <h3>
+                    Languages
+                </h3>
+                <div class="popup" id="popup-7">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <div class="close-btn">×</div>
+
+                        <h4>Languages</h4>
+
+                        <p>
+                            My personal and academic background has allowed me to develop a multilingual profile,
+                            which I regularly use in my studies, technical projects and professional experience.
+                        </p>
+
+                        <p>
+                            <strong>French:</strong> B2 level certified by the DELF, obtained in June 2022.
+                        </p>
+
+                        <p>
+                            <strong>English:</strong> advanced level, with a
+                            <strong>TOEIC score of 975/990</strong> obtained in July 2026.
+                        </p>
+
+                        <p>
+                            <strong>Russian:</strong> bilingual.
+                        </p>
+
+                        <p>
+                            <strong>Ukrainian:</strong> native language.
+                        </p>
+
+                        <p>
+                            <strong>Spanish:</strong> basic knowledge.
+                        </p>
+                    </div>
+                </div>
+                <button id="show-popup-btn-7">
+                    View More
+                </button>
+            </li>
+        </ul>
+        <ul class="info">
+            <li class="info-item">
+                <img alt="Certificat Voltaire" src="images/voltaire.png" />
+                <h3>
+                    Certificat Voltaire
+                </h3>
+                <div class="popup" id="popup-14">
+                    <div class="overlay">
+                    </div>
+                    <div class="content">
+                        <div class="close-btn">
+                            ×
+                        </div>
+                        <h4>
+                            Certificat Voltaire
+                        </h4>
+                        <p>
+                            I obtained the Certificat Voltaire, a French certification that assesses spelling and
+                            written-expression proficiency.
+                        </p>
+                        <p>
+                            This certification is relevant to my background because it demonstrates my ability to write
+                            professional documents, technical reports and project summaries clearly and accurately in
+                            French.
+                        </p>
+                        <a href="documents/Voltaire_DYSHLEVYY.pdf" target="_blank">
+                            View Certificat Voltaire
+                        </a>
+                    </div>
+                </div>
+                <button id="show-popup-btn-14">
+                    View More
+                </button>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <p>
+            © 2026 Bohdan Dyshlevyy
+        </p>
+    </footer>
+</body>
+
+</html>

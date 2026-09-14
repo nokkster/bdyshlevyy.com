@@ -2,99 +2,190 @@
 <html lang="fr">
 
 <head>
-    <title>Ma Page Web</title>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bohdan Dyshlevyy | Portfolio</title>
+
+    <meta name="description"
+        content="Portfolio de Bohdan Dyshlevyy, étudiant ingénieur à EURECOM spécialisé en réseaux, systèmes, cybersécurité et DevOps.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-
     <header>
         <nav>
+            <a href="index.html" class="logo">BD.</a>
+
             <ul>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html" class="active">Accueil</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="parcours.html">Parcours</a></li>
                 <li><a href="passions.html">Passions</a></li>
             </ul>
+
+            <a href="index-en.html" class="language-switch">
+                EN
+            </a>
         </nav>
     </header>
 
+    <main>
 
+        <!-- HERO -->
+        <section class="hero">
 
-    <div class="container">
-        <section id="Container"></section>
-        <h1>Bienvenue sur mon portfolio</h1>
-        <h2>Je vous invite à le découvrir</h2>
-        <h2>Recherche une alternance de 3 ans à partir de septembre 2026</h2>
-        <div class="cv-container">
-            <a href="CV_DYSHLEVYY_ING.pdf" target="_blank" class="cv-btn">
-                Télécharger mon CV
-            </a>
-        </div>
-
-        <div class="info">
-            <div class="info-item">
-                <img src="moi.jpg" alt="Moi" class="pfp">
-                <div class="info-text">
-                    <div class="titre">
-                        <p>À propos de <strong>Moi</strong></p>
-                    </div>
-                    <p>
-                        Je suis <strong>Bohdan DYSHLEVYY</strong>, étudiant de 19 ans en troisième année de Bachelor
-                        Universitaire de Technologie (BUT) Réseaux & Télécommunications à l'IUT Nice Côte d'Azur, en
-                        alternance au Centre Inria d'Université Côte d'Azur.
-                    </p>
-
-                    <p>
-                        Passionné par les réseaux, les systèmes, la cybersécurité et le DevOps, j'ai participé à de
-                        nombreux projets autour de l'administration système, des infrastructures réseau, de Kubernetes,
-                        de Docker, de l'automatisation et du cloud.
-                    </p>
-
-                    <p>
-                        J'ai été admis en cycle ingénieur Informatique et Réseaux parcours Systèmes et Réseaux à
-                        <strong>IMT Mines Alès</strong> pour la
-                        rentrée 2026. Je suis actuellement à la recherche d'une <strong>alternance de 3 ans</strong>
-                        afin de poursuivre ma formation d'ingénieur tout en développant mes compétences au sein d'une
-                        entreprise.
-                    </p>
-
-                    <p>
-                        Originaire d'Ukraine et installé en France depuis plusieurs années, je suis une personne
-                        motivée, curieuse et rigoureuse. En dehors de mes études, je pratique la musculation et la
-                        musique.
-                    </p>
-                </div>
+            <div class="hero-badge">
+                Étudiant ingénieur à EURECOM
             </div>
-        </div>
-    </div>
 
+            <h1>
+                Bohdan <span>DYSHLEVYY</span>
+            </h1>
 
+            <p class="hero-description">
+                Réseaux · Systèmes · Cybersécurité · DevOps
+            </p>
 
-    <section id="Mes_contacts">
-        <p>Mes <strong>Contacts </strong></p>
-        <a href="mailto: dandyshlevyy@gmail.com" target="_blank">
-            <img src="email.png" alt="Email" width="80" height="80">
-        </a>
+            <p class="stage-search">
+                À la recherche d'un stage de 4 semaines minimum
+            </p>
 
-        <a href="https://github.com/nokkster" target="_blank">
-            <img src="github.png" alt="Github" width="80" height="80">
-        </a>
-        <a href="https://www.linkedin.com/in/bohdandyshlevyy/" target="_blank">
-            <img src="linkedin.png" alt="Linkedin" width="80" height="80">
-        </a>
-    </section>
+            <div class="hero-buttons">
+
+                <a href="documents/CV_DYSHLEVYY_ING.pdf" target="_blank" class="btn btn-primary">
+                    Télécharger mon CV
+                </a>
+
+                <a href="portfolio.html" class="btn btn-secondary">
+                    Découvrir mes projets
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about">
+
+            <div class="about-card">
+
+                <div class="profile-container">
+                    <img src="images/moi.jpg" alt="Photo de Bohdan Dyshlevyy" class="pfp">
+                </div>
+
+                <div class="about-content">
+
+                    <p class="section-label">À propos</p>
+
+                    <h2>Mon parcours</h2>
+
+                    <p>
+                        Je suis <strong>Bohdan DYSHLEVYY</strong>, étudiant de 19 ans en
+                        première année du cycle ingénieur à <strong>EURECOM</strong>,
+                        après avoir obtenu un BUT Réseaux & Télécommunications
+                        à l'IUT Nice Côte d'Azur.
+                    </p>
+
+                    <p>
+                        Je m'intéresse particulièrement aux
+                        <strong>réseaux, systèmes, cybersécurité et DevOps</strong>.
+                        Au cours de ma formation et de mes expériences professionnelles,
+                        j'ai travaillé sur l'administration système et réseau,
+                        l'automatisation, Kubernetes, GitOps, CI/CD,
+                        la conteneurisation et la cybersécurité.
+                    </p>
+
+                    <p>
+                        J'ai réalisé un stage puis une année d'alternance au
+                        <strong>Centre Inria d'Université Côte d'Azur</strong>,
+                        au sein de l'équipe-projet DIANA.
+                        J'y ai notamment travaillé sur l'infrastructure européenne
+                        de recherche SLICES-RI, l'automatisation de ressources
+                        expérimentales et l'évaluation de performances matérielles.
+                    </p>
+
+                    <p>
+                        Je suis actuellement à la recherche d'un
+                        <strong>stage d'une durée minimale de 4 semaines</strong>
+                        afin de poursuivre mon développement professionnel dans
+                        les domaines des réseaux, systèmes, cybersécurité ou DevOps.
+                    </p>
+
+                    <p>
+                        Originaire d'Ukraine et installé en France depuis plusieurs années,
+                        je suis curieux, autonome et rigoureux.
+                        En dehors de mes études, je pratique notamment le sport,
+                        la musique, le ski et la randonnée.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact">
+
+            <p class="section-label">Contact</p>
+
+            <h2>Me contacter</h2>
+
+            <p class="contact-description">
+                N'hésitez pas à me contacter pour un stage, un projet
+                ou simplement pour échanger.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="mailto:bohdan.dyshlevyy@eurecom.fr" class="contact-item">
+
+                    <img src="images/eurecom_icon.png" alt="Email EURECOM">
+
+                    <span>Email EURECOM</span>
+                </a>
+
+                <a href="mailto:dandyshlevyy@gmail.com" class="contact-item">
+
+                    <img src="images/email.png" alt="Email personnel">
+
+                    <span>Email personnel</span>
+                </a>
+
+                <a href="https://github.com/nokkster" target="_blank" rel="noopener noreferrer" class="contact-item">
+
+                    <img src="images/github.png" alt="GitHub">
+
+                    <span>GitHub</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/bohdandyshlevyy/" target="_blank" rel="noopener noreferrer"
+                    class="contact-item">
+
+                    <img src="images/linkedin.png" alt="LinkedIn">
+
+                    <span>LinkedIn</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <footer>
-        <p>&copy; 2026 Dyshlevyy Bohdan </p>
+        <p>© 2026 Bohdan Dyshlevyy</p>
     </footer>
 
 </body>

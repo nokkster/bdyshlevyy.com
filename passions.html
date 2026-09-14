@@ -2,145 +2,231 @@
 <html lang="fr">
 
 <head>
-  <title>Mes Passions</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="passions.css" />
-  <script src="passionsscr.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Passions | Bohdan Dyshlevyy</title>
+    <meta name="description" content="Découvrez les passions de Bohdan Dyshlevyy : sport, musique, ski et randonnée.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/passions.css">
+
+    <script src="js/passionsscr.js" defer></script>
 </head>
 
 <body>
 
+    <header>
+        <nav>
+            <a href="index.html" class="logo">BD.</a>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="parcours.html">Parcours</a></li>
-        <li><a href="passions.html">Passions</a></li>
-      </ul>
-    </nav>
-  </header>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="passions.html" class="active">Passions</a></li>
+            </ul>
 
-  <div class="head">
+            <a href="passions-en.html" class="language-switch">EN</a>
+        </nav>
+    </header>
 
-    <p>Mes <strong>Passions</strong></p>
-  </div>
-
-  <section id="Container"></section>
-  <div class="container">
-
-    <ul class="info">
-      <li class="info-item">
-        <img src="gym.png" alt="Gym">
-        <h3>Sports</h3>
-        <div class="popup" id="popup-1">
-          <div class="overlay"></div>
-          <div class="content">
-            <div class="close-btn">&times;</div>
-            <h4>Sports</h4>
-            <p>Dans mes loisirs, je suis passionné par la natation, la gymnastique suédoise depuis l'adolescence et la
-              musculation depuis 2022. Ces activités m'ont apporté discipline, équilibre et renforcement physique,
-              nourrissant ma passion pour le bien-être et la santé.</p>
-            <img src="gym.jpg" alt="Gym">
-          </div>
-        </div>
-        <button id="show-popup-btn-1">Voir Plus</button>
-      </li>
-
-      <li class="info-item">
-        <img src="musique.png" alt="Musique">
-        <h3>Musique</h3>
-        <div class="popup" id="popup-2">
-          <div class="overlay"></div>
-          <div class="content">
-            <div class="close-btn">&times;</div>
-            <h4>Musique</h4>
-
-            <p>À 9 ans, j'ai débuté la guitare puis découvert la batterie et le chant. J'ai intégré trois groupes
-              musicaux, un au lycée et deux à l'école de musique, renforçant ainsi ma passion pour la musique.</p>
-            <p>Voici un lien vers une chaîne YouTube de mon école de musique, vous y trouverez des vidéos de moi : <a
-                href="https://www.youtube.com/@playtoday.studio/videos" target="_blank">YouTube</a></p>
-            <iframe src="https://drive.google.com/file/d/11eoG0-JZeBkf6h03gtxAZXapz5aUPREk/preview" width="640"
-              height="480" allow="autoplay"></iframe>
-          </div>
-        </div>
-        <button id="show-popup-btn-2">Voir Plus</button>
-      </li>
-
-      <li class="info-item">
-        <img src="ski.png" alt="Ski">
-        <h3>Ski</h3>
-        <div class="popup" id="popup-3">
-          <div class="overlay"></div>
-          <div class="content">
-            <div class="close-btn">&times;</div>
-            <h4>Ski</h4>
-            <p>En 2022, j'ai commencé le ski et je suis déjà un skieur intermédiaire. Dévaler les pentes des stations
-              d'Auron et d'Isola me procure une grande satisfaction.</p>
-
-            <div class="media-container">
-              <div class="video-wrapper">
-                <video width="auto" height="400px" controls="controls">
-                  <source src="ski.mp4.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <div class="image-wrapper">
-                <img src="ski1.jpg" alt="Ski1">
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <button id="show-popup-btn-3">Voir Plus</button>
-      </li>
-
-    </ul>
-
-    <ul class="info">
-      <li class="info-item">
-        <img src="hiking.png" alt="Randonnée">
-        <h3>Randonnée</h3>
-
-        <div class="popup" id="popup-4">
-          <div class="overlay"></div>
-          <div class="content">
-            <div class="close-btn">&times;</div>
-            <h4>Randonnée</h4>
-
-            <p>
-              J'aime faire de la randonnée avec mes amis, surtout pour découvrir de nouveaux paysages, profiter de la
-              nature et prendre du recul après les périodes de travail ou d'études.
+    <main>
+        <section class="passions-hero">
+            <p class="section-label">Passions</p>
+            <h1>Ce qui me <span>passionne</span></h1>
+            <p class="passions-intro">
+                En dehors de mes études et de mes projets techniques, j'aime consacrer du temps
+                au sport, à la musique et aux activités en plein air.
             </p>
+        </section>
 
-            <p>
-              Ces sorties me permettent aussi de partager des moments simples, de rester actif et de découvrir de beaux
-              endroits dans la région.
-            </p>
+        <section class="passions-grid">
 
-            <img src="hiking-landscape.jpg" alt="Paysage de randonnée">
-          </div>
-        </div>
+            <article class="passion-card">
+                <img src="images/gym.png" alt="Sport et musculation">
 
-        <button id="show-popup-btn-4">Voir Plus</button>
-      </li>
-    </ul>
+                <div class="passion-card-content">
+                    <p class="passion-type">Sport</p>
+                    <h2>Sport &amp; musculation</h2>
+                    <p>
+                        Natation, gymnastique et musculation occupent une place importante
+                        dans mon quotidien.
+                    </p>
 
+                    <button id="show-popup-btn-1">Découvrir</button>
+                </div>
 
-  </div>
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
 
+                    <div class="content">
+                        <button class="close-btn" aria-label="Fermer">&times;</button>
 
+                        <p class="popup-label">Sport</p>
+                        <h3>Sport &amp; musculation</h3>
 
+                        <p>
+                            Le sport fait partie de mes habitudes depuis plusieurs années.
+                            J'ai pratiqué la natation et la gymnastique pendant mon adolescence,
+                            puis j'ai commencé la musculation en 2022.
+                        </p>
 
+                        <p>
+                            Ces activités m'apportent discipline, régularité et équilibre.
+                            Elles me permettent également de rester actif et de me fixer des
+                            objectifs en dehors de mes études.
+                        </p>
 
-  <footer>
-    <p>&copy; 2026 Dyshlevyy Bohdan </p>
-  </footer>
+                        <img src="images/gym.jpg" alt="Entraînement en salle de sport">
+                    </div>
+                </div>
+            </article>
+
+            <article class="passion-card">
+                <img src="images/musique.png" alt="Musique">
+
+                <div class="passion-card-content">
+                    <p class="passion-type">Musique</p>
+                    <h2>Guitare, batterie &amp; chant</h2>
+                    <p>
+                        La musique m'accompagne depuis l'enfance, aussi bien en pratique
+                        individuelle qu'en groupe.
+                    </p>
+
+                    <button id="show-popup-btn-2">Découvrir</button>
+                </div>
+
+                <div class="popup" id="popup-2">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <button class="close-btn" aria-label="Fermer">&times;</button>
+
+                        <p class="popup-label">Musique</p>
+                        <h3>Guitare, batterie &amp; chant</h3>
+
+                        <p>
+                            J'ai commencé la guitare à l'âge de 9 ans avant de découvrir
+                            la batterie et le chant. J'ai ensuite joué dans plusieurs groupes,
+                            au lycée et dans une école de musique.
+                        </p>
+
+                        <p>
+                            Jouer avec d'autres musiciens m'a appris à écouter, à m'adapter
+                            et à travailler collectivement autour d'un objectif commun.
+                        </p>
+
+                        <a class="popup-link" href="https://www.youtube.com/@playtoday.studio/videos" target="_blank"
+                            rel="noopener noreferrer">
+                            Voir la chaîne YouTube de mon école de musique
+                        </a>
+
+                        <div class="embed-wrapper">
+                            <iframe src="https://drive.google.com/file/d/11eoG0-JZeBkf6h03gtxAZXapz5aUPREk/preview"
+                                allow="autoplay" title="Vidéo musicale">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="passion-card">
+                <img src="images/ski.png" alt="Ski">
+
+                <div class="passion-card-content">
+                    <p class="passion-type">Montagne</p>
+                    <h2>Ski</h2>
+                    <p>
+                        J'ai découvert le ski en 2022 et j'apprécie particulièrement
+                        les stations des Alpes-Maritimes.
+                    </p>
+
+                    <button id="show-popup-btn-3">Découvrir</button>
+                </div>
+
+                <div class="popup" id="popup-3">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <button class="close-btn" aria-label="Fermer">&times;</button>
+
+                        <p class="popup-label">Montagne</p>
+                        <h3>Ski</h3>
+
+                        <p>
+                            J'ai commencé le ski en 2022 et j'ai progressivement développé
+                            un niveau intermédiaire. J'aime particulièrement skier à Auron, Colmiane
+                            et Isola 2000.
+                        </p>
+
+                        <p>
+                            Le ski combine activité physique, concentration et découverte
+                            de la montagne, ce qui en fait l'une de mes activités préférées
+                            pendant l'hiver.
+                        </p>
+
+                        <div class="ski-media">
+                            <video controls preload="metadata">
+                                <source src="media/ski.mp4" type="video/mp4">
+                                Votre navigateur ne prend pas en charge la lecture vidéo.
+                            </video>
+
+                            <img src="images/ski1.jpg" alt="Journée de ski">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="passion-card">
+                <img src="images/hiking.png" alt="Randonnée">
+
+                <div class="passion-card-content">
+                    <p class="passion-type">Plein air</p>
+                    <h2>Randonnée</h2>
+                    <p>
+                        J'aime découvrir de nouveaux paysages et profiter de la nature
+                        avec mes amis.
+                    </p>
+
+                    <button id="show-popup-btn-4">Découvrir</button>
+                </div>
+
+                <div class="popup" id="popup-4">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <button class="close-btn" aria-label="Fermer">&times;</button>
+
+                        <p class="popup-label">Plein air</p>
+                        <h3>Randonnée</h3>
+
+                        <p>
+                            J'aime faire de la randonnée avec mes amis pour découvrir de
+                            nouveaux paysages, profiter de la nature et prendre du recul
+                            après les périodes de travail ou d'études.
+                        </p>
+
+                        <p>
+                            Ces sorties sont aussi une bonne occasion de rester actif,
+                            de découvrir la région et de partager des moments simples.
+                        </p>
+
+                        <img src="images/hiking-landscape.jpg" alt="Paysage de randonnée">
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bohdan Dyshlevyy</p>
+    </footer>
 
 </body>
 
